@@ -4,8 +4,8 @@ import './RecordCollector.css'
 // import EmployeeCard from './employee/EmployeeCard';
 // import LocationCard from './location/LocationCard';
 // import OwnerCard from './owner/OwnerCard';
-import NavBar from './nav/NavBar';
-import ApplicationViews from './ApplicationViews';
+import NavBar from './components/nav/NavBar';
+import ApplicationViews from '../src/components/ApplicationViews';
 
 class RecordCollector extends Component {
     state = {

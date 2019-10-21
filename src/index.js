@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from "react-router-dom"
-import RecordCollector from './components/RecordCollector'
+import RecordCollector from './RecordCollector'
 
 ReactDOM.render(
     <Router>
