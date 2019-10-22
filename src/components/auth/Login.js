@@ -1,11 +1,15 @@
 import React, { Component } from "react"
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { withRouter } from "react-router-dom";
+import AuthManager from "../../Modules/AuthManager"
 
 class Login extends Component {
 
     // Set initial state
     state = {
         email: "",
-        password: ""
+        password: "",
+        id: ""
     }
 
     // Update state whenever an input field is edited
@@ -17,38 +21,54 @@ class Login extends Component {
 
     handleLogin = (e) => {
         e.preventDefault()
-
+        /*
+            For now, just store the email and password that
+            the customer enters into local storage.
+        */
         let credentials = { email: this.state.email, password: this.state.password }
-        this.props.setUser(credentials);
-        this.props.history.push("/");
+        AuthManager.getUserData(this.state.email)
+            .then(result => {
+                console.log(result)
+                if (result.length > 0) {
+                    console.log("if triggered")
+                    this.props.setUser(result);
+                    this.props.history.push("/");
+                } else {
+                    console.log(credentials)
+                    AuthManager.createUser(credentials)
+                        .then(result => {
+                            console.log("result is", result);
+                            this.props.setUser(result);
+                        })
+                    this.props.history.push("/")
+                }
+
+            })
     }
 
     render() {
         return (
-            <form onSubmit={this.handleLogin}>
-                <fieldset>
-                    <h3>Please sign in</h3>
-                    <div className="formgrid">
-                        <input onChange={this.handleFieldChange} type="email"
-                            id="email"
-                            placeholder="Email address"
-                            required="" autoFocus="" />
-                        <label htmlFor="inputEmail">Email address</label>
-
-                        <input onChange={this.handleFieldChange} type="password"
-                            id="password"
-                            placeholder="Password"
-                            required="" />
-                        <label htmlFor="inputPassword">Password</label>
-                    </div>
-                    <button type="submit">
-                        Sign in
-            </button>
-                </fieldset>
-            </form>
+            <>
+                <div className="logRegForm">
+                    <h3 className="logRegTitle">Please Login</h3>
+                    <Form onSubmit={this.handleLogin} inline>
+                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                            <Label htmlFor="inputEmail" className="mr-sm-2">Email:</Label>
+                            <Input onChange={this.handleFieldChange}
+                                required="" autoFocus="" type="email" name="email" id="email" />
+                        </FormGroup>
+                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                            <Label htmlFor="inputPassword" className="mr-sm-2">Password:</Label>
+                            <Input onChange={this.handleFieldChange} type="password"
+                                required="" type="password" name="password" id="password" />
+                        </FormGroup>
+                        <Button className="submit">Submit</Button>
+                    </Form>
+                </div>
+            </>
         )
     }
 
 }
 
-export default Login
+export default withRouter(Login)

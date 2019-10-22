@@ -1,17 +1,32 @@
 {
-    "users": [
-        {
-            "email": "",
-            "password": "",
-            "id": 1
-        }
-    ],
-    "catalogue": [
-        {
-            "album": "",
-            "dateAdded": "",
-            "comments": "",
-            "userId": ""
-        }
-    ]
+  "users": [
+    {
+      "name": "Kai",
+      "email": "kai@aol.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Milo",
+      "email": "milo@aol.com",
+      "password": "1234",
+      "id": 2
+    }
+  ],
+  "catalogue": [
+    {
+      "albumId": "",
+      "dateAdded": "",
+      "comments": "",
+      "userId": ""
+    }
+  ],
+  "wishlist": [
+    {
+      "albumId": "",
+      "dateAdded": "",
+      "comments": "",
+      "userId": ""
+    }
+  ]
 }
