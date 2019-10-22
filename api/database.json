@@ -1,3 +1,17 @@
 {
-    "users": []
+    "users": [
+        {
+            "email": "",
+            "password": "",
+            "id": 1
+        }
+    ],
+    "catalogue": [
+        {
+            "album": "",
+            "dateAdded": "",
+            "comments": "",
+            "userId": ""
+        }
+    ]
 }
