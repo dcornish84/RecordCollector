@@ -24,14 +24,5 @@ export default {
         return fetch(`${remoteURL}/orders?userId=${userId}&_expand=taco`)
             .then(response => response.json())
 
-    },
-    orderTaco(tacoObj) {
-        return fetch(`${remoteURL}/orders`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(tacoObj)
-        }).then(response => response.json())
     }
 }
