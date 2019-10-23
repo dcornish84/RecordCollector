@@ -1,5 +1,6 @@
 const remoteURL = "http://localhost:5002"
 
+
 let API = {
     get(resource, id) {
         return fetch(`${remoteURL}/${resource}/${id}`).then(response => response.json())
@@ -10,6 +11,19 @@ let API = {
     getAll(resource) {
         return fetch(`${remoteURL}/${resource}`).then(response => response.json())
     },
+    recordSearch(record) {
+        return fetch(`https://api.discogs.com/database/search?q=${record}&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
+    },
+    saveRecord: record => {
+        return fetch("http://localhost:5002/catalogue", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(record)
+        }).then(response => response.json());
+    },
+
     delete(resource, id) {
         return fetch(`${remoteURL}/${resource}/${id}`, {
             method: "DELETE"

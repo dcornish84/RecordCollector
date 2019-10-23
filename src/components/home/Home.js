@@ -9,6 +9,7 @@ class Home extends Component {
                     <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
                 </picture>
             </div >
+
         )
     }
 }

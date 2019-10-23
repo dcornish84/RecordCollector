@@ -11,6 +11,12 @@
       "email": "milo@aol.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "name": "Mr Jones",
+      "email": "jones@aol.com",
+      "password": "1234",
+      "id": 3
     }
   ],
   "catalogue": [

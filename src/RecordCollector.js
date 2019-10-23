@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 import './RecordCollector.css'
-// import AnimalCard from './animal/AnimalCard';
-// import EmployeeCard from './employee/EmployeeCard';
-// import LocationCard from './location/LocationCard';
-// import OwnerCard from './owner/OwnerCard';
 import NavBar from './components/nav/NavBar';
 import ApplicationViews from '../src/components/ApplicationViews';
 
