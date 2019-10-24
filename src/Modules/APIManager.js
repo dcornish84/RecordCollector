@@ -12,7 +12,7 @@ let API = {
         return fetch(`${remoteURL}/${resource}`).then(response => response.json())
     },
     recordSearch(record) {
-        return fetch(`https://api.discogs.com/database/search?q=${record}&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
+        return fetch(`https://api.discogs.com/database/search?type=artist&q=${record}&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
     },
     saveRecord: record => {
         return fetch("http://localhost:5002/catalogue", {

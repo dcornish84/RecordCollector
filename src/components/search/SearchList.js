@@ -20,13 +20,16 @@ class SearchList extends Component {
     };
 
     newSearch = () => {
-        API.recordSearch(this.state.searchResults)
-            .then(results => this.setState({ searchResults: results }))
-            .then(result => console.log(this.state.searchResults.results))
-        // .then(() => this.state.searchResults.results.map(result => console.log(result)))
+        API.recordSearch(this.state.search)
+            .then(results => this.setState({ searchResults: results.results }))
     };
 
+    componentDidMount() {
+
+    }
+
     render() {
+        console.log(this.state.searchResults)
         return (
             <>
                 <div className="searchBtnDiv">
@@ -48,14 +51,17 @@ class SearchList extends Component {
 				</Button>
                 </div>
                 <>
-                    {/* {this.state.searchResults.results.forEach(result =>
+                    {this.state.searchResults.map(result =>
                         <div>
                             <SearchCard
                                 key={result.id}
-                                result={result.results}
-                                {...this.props} />)}
-                    </div>
-                    )} */}
+                                result={result}
+                                {...this.props}
+                                newSearch={this.newSearch} />
+                        </div>
+
+                    )
+                    }
                 </>
             </>
         );

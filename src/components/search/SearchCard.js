@@ -5,8 +5,8 @@ import API from "../../Modules/APIManager";
 
 class SearchCard extends Component {
     handleSave = id => {
-        API.saveRecord(id).then(() => this.props.getData())
-        this.props.history.push("/searchCard");
+        API.saveRecord(id).then(() => this.props.newSearch())
+        this.props.history.push("/search");
     };
     render() {
         return (
@@ -16,7 +16,7 @@ class SearchCard extends Component {
                     <h3>
                         Record{" "}
                         <span className="card-searchResults">
-                            {this.props.record}
+                            {this.props.result.title}
                         </span>
                     </h3>
                     <div className="populateSearch">
