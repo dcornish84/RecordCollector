@@ -34,8 +34,8 @@ class CatalogueCard extends Component {
                     <CardTitle>Record: <span className="cardRecordName">{this.props.catalogue}</span></CardTitle>
                     <CardSubtitle>Artist: {this.props.catalogue} </CardSubtitle >
                     {/* <Media src={this.props.record.cover_image}></Media> */}
-                    {/* <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.catalogue.id}/edit`) }}>Edit Details</Button> */}
-                    <Button type="button" onClick={() => this.handleDelete(this.props.cataloge)}>Delete</Button>
+                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.catalogue.id}/edit`) }}>Edit Details</Button>
+                    <Button type="button" onClick={() => this.handleDelete(this.props.catalogue.id)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >

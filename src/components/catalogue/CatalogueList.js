@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CatalogueCard from "./CatalogueCard";
-import { Button } from 'reactstrap';
 import API from '../../Modules/APIManager';
 
 
@@ -27,7 +26,7 @@ class CatalogueList extends Component {
         return (
             <>
                 <div>
-                    <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button>
+                    {/* <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button> */}
                 </div>
                 <div>
                     {this.state.catalogue.map(record =>
