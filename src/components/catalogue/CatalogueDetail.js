@@ -6,9 +6,6 @@ import CatalogueList from "./CatalogueList"
 class CatalogueDetails extends Component {
     state = {
         catalogue: [],
-        artist: "",
-        title: "",
-        date: "",
         loadingStatus: true,
     }
 

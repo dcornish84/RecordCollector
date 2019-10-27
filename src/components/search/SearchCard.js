@@ -5,12 +5,12 @@ import API from "../../Modules/APIManager";
 
 class SearchCard extends Component {
     handleSaveCatalogue = id => {
-        API.saveRecord(id).then(() => this.props.newSearch())
+        API.saveRecordCatalogue(id).then(() => this.props.newSearch())
         this.props.history.push("/catalogue");
     };
 
     handleSaveWishlist = id => {
-        API.saveRecord(id).then(() => this.props.newSearch())
+        API.saveRecordWishlist(id).then(() => this.props.newSearch())
         this.props.history.push("/wishlist");
     };
     render() {
@@ -33,14 +33,14 @@ class SearchCard extends Component {
                     </div>
                     <Button
                         type="button"
-                        onClick={() => this.handleSaveCatalogue(this.props.title)}>
+                        onClick={() => this.handleSaveCatalogue(this.props.release_title)}>
                         Add to Catalogue
 				</Button>
                 </div>
                 <div>
                     <Button
                         type="button"
-                        onClick={() => this.handleSaveWishlist(this.props.title)}>
+                        onClick={() => this.handleSaveWishlist(this.props.release_title)}>
                         Add to Wishlist
 				</Button>
                 </div>

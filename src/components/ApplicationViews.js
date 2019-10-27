@@ -6,6 +6,7 @@ import Register from './auth/Register'
 import SearchList from './search/SearchList'
 import SearchDetail from './search/SearchDetail'
 import CatalogueDetails from './catalogue/CatalogueDetail'
+import CatalogueList from './catalogue/CatalogueList'
 
 
 class ApplicationViews extends Component {
@@ -32,6 +33,9 @@ class ApplicationViews extends Component {
                 }} />
                 <Route exact path="/catalogue" render={(props) => {
                     return <CatalogueDetails user={this.props.user} setUser={this.props.setUser} {...props} />
+                }} />
+                <Route exact path="/catalogue" render={(props) => {
+                    return <CatalogueList user={this.props.user} setUser={this.props.setUser} {...props} />
                 }} />
 
             </React.Fragment>

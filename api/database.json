@@ -21,13 +21,15 @@
   ],
   "catalogue": [
     {
-      "id": 2,
-      "artist": "Nirvana",
-      "title": "Nevermind",
-      "date": "1991",
-      "loadingStatus": true,
-      "userId": 1
+      "id": 1
+    },
+    {
+      "id": 2
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "id": 1
+    }
+  ]
 }

@@ -8,15 +8,12 @@ class CatalogueList extends Component {
     //This holds the state of the Catalogue
     state = {
         catalogue: [],
-        artist: "",
-        title: "",
-        date: "",
         loadingStatus: true,
     }
 
     componentDidMount() {
         //getAll from APIManager and hang on to that data; put it in state
-        API.getAll()
+        API.getAllCatalogue()
             .then((catalogue) => {
                 this.setState({
                     catalogue: catalogue
@@ -33,14 +30,14 @@ class CatalogueList extends Component {
                     <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button>
                 </div>
                 <div>
-                    {this.state.catalogue(record =>
+                    {this.state.catalogue.map(record =>
                         <CatalogueCard
                             key={record.id}
                             user={this.props.user}
                             getData={this.getData}
                             artist={record.artist}
-                            title={record.title}
-                            date={record.date}
+                            title={record.release_title}
+                            date={record.year}
                             deleteEvent={this.deleteEvent}
                             {...this.props} />)}
                 </div>
