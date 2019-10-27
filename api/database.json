@@ -21,24 +21,13 @@
   ],
   "catalogue": [
     {
-      "id": "Ot9nKXO"
-    },
-    {
-      "id": "JlnsIa4"
-    },
-    {
-      "id": "QVst3gz"
-    },
-    {
-      "id": "IZd_Z7c"
-    },
-    {
-      "id": "8oeCq_-"
-    },
-    {
-      "id": "Eke0Hqo"
+      "id": 2,
+      "artist": "Nirvana",
+      "title": "Nevermind",
+      "date": "1991",
+      "loadingStatus": true,
+      "userId": 1
     }
   ],
-  "wishlist": [],
-  "records": []
+  "wishlist": []
 }

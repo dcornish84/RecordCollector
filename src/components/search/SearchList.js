@@ -20,7 +20,7 @@ class SearchList extends Component {
     };
 
     newSearch = () => {
-        API.recordSearch(this.state.search)
+        API.artistSearch(this.state.search)
             .then(results => this.setState({ searchResults: results.results }))
     };
 

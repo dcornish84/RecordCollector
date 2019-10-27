@@ -4,9 +4,14 @@ import { Button } from "reactstrap";
 import API from "../../Modules/APIManager";
 
 class SearchCard extends Component {
-    handleSave = id => {
+    handleSaveCatalogue = id => {
         API.saveRecord(id).then(() => this.props.newSearch())
         this.props.history.push("/catalogue");
+    };
+
+    handleSaveWishlist = id => {
+        API.saveRecord(id).then(() => this.props.newSearch())
+        this.props.history.push("/wishlist");
     };
     render() {
         return (
@@ -14,11 +19,13 @@ class SearchCard extends Component {
             <div className="card">
                 <div className="card-content">
                     <h3>
-                        Record{" "}
+                        {" "}
                         <span className="card-searchResults">
-                            {this.props.result.artist}
                             {this.props.result.title}
-                            {this.props.result.thumb}
+                            {this.props.result.release_title}
+                            {this.props.result.year}
+                            <a href={this.props.result.resource_url}><img src={this.props.result.cover_image} /></a>
+                            {/* what will appear on search card */}
                         </span>
                     </h3>
                     <div className="populateSearch">
@@ -26,11 +33,16 @@ class SearchCard extends Component {
                     </div>
                     <Button
                         type="button"
-                        onClick={() => this.handleSave(this.props.record)}
-                    >
+                        onClick={() => this.handleSaveCatalogue(this.props.title)}>
                         Add to Catalogue
 				</Button>
-
+                </div>
+                <div>
+                    <Button
+                        type="button"
+                        onClick={() => this.handleSaveWishlist(this.props.title)}>
+                        Add to Wishlist
+				</Button>
                 </div>
             </div>
         );

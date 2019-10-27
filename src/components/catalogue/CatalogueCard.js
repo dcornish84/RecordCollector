@@ -7,14 +7,15 @@ import CardBody from 'reactstrap/lib/CardBody';
 
 class CatalogueCard extends Component {
 
-    handleDelete = (id) => {
-        API.delete("catalogue", id)
-            .then(() => this.props.getData());
-    }
-
+    handleDelete = () => {
+        this.setState({ loadingStatus: true });
+        API.delete("catalogue", this.props.title.id)
+            .then(() => this.props.history.push("/catalogue")
+            );
+    };
     getRecords = () => {
         this.setState({ loadingstatus: true });
-        API.recordSearch(this.props.catalogue)
+        API.recordSearch(this.props.title.id)
             .then(() => this.props.getData())
             .then(() => this.props.history.push("/catalogue")
             );
@@ -25,15 +26,12 @@ class CatalogueCard extends Component {
         return (
             <div><Card className="card">
 
-                {/* <CardImg>
-                        <img src={} alt="" />
-                    </CardImg> */}
                 <CardBody className="catalogueCard">
                     <CardTitle>Record: <span className="cardRecordName">{this.props.catalogue.title}</span></CardTitle>
                     <CardSubtitle>Artist: {this.props.catalogue.artist} </CardSubtitle >
                     {/* <Media src={this.props.record.cover_image}></Media> */}
-                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.catalogue}/edit`) }}>Edit Details</Button>
-                    <Button type="button" onClick={() => this.handleDelete(this.props.catalogue)}>Delete</Button>
+                    {/* <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.catalogue.id}/edit`) }}>Edit Details</Button> */}
+                    <Button type="button" onClick={() => this.handleDelete(this.props.cataloge)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >

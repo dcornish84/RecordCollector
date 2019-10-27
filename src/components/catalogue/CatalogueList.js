@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import CatalogueCard from "./CatalogueCard";
-import API from "../../Modules/APIManager";
 import { Button } from 'reactstrap';
+import API from '../../Modules/APIManager';
 
 
 class CatalogueList extends Component {
     //This holds the state of the Catalogue
     state = {
         catalogue: [],
+        artist: "",
+        title: "",
+        date: "",
+        loadingStatus: true,
     }
 
-    deleteRecord = id => {
-        API.delete("catalogue", id)
-            .then(() => {
-                this.getData();
-            })
-    }
-
-    getData = () => {
+    componentDidMount() {
         //getAll from APIManager and hang on to that data; put it in state
-        API.getAll("catalogue")
+        API.getAll()
             .then((catalogue) => {
                 this.setState({
                     catalogue: catalogue
@@ -27,9 +24,6 @@ class CatalogueList extends Component {
             })
     }
 
-    componentDidMount() {
-        this.getData()
-    }
 
     render() {
 
@@ -39,11 +33,14 @@ class CatalogueList extends Component {
                     <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button>
                 </div>
                 <div>
-                    {this.state.catalogue.map(catalogue =>
+                    {this.state.catalogue(record =>
                         <CatalogueCard
-                            key={catalogue.id}
-                            getAll={this.getData}
-                            catalogue={catalogue}
+                            key={record.id}
+                            user={this.props.user}
+                            getData={this.getData}
+                            artist={record.artist}
+                            title={record.title}
+                            date={record.date}
                             deleteEvent={this.deleteEvent}
                             {...this.props} />)}
                 </div>

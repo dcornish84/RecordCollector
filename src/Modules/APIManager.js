@@ -11,16 +11,19 @@ let API = {
     getAll(resource) {
         return fetch(`${remoteURL}/${resource}`).then(response => response.json())
     },
-    recordSearch(record) {
-        return fetch(`https://api.discogs.com/database/search?type=artist&q=${record}&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
+    artistSearch(record) {
+        return fetch(`https://api.discogs.com//database/search?q=${record}&type=release&release_title&year&per_page=100&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
     },
-    saveRecord: record => {
+    releaseSearch(release) {
+        return fetch(`https://api.discogs.com/artists/${release}/releases&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
+    },
+    saveRecord: recordSave => {
         return fetch("http://localhost:5002/catalogue", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(record)
+            body: JSON.stringify(recordSave)
         }).then(response => response.json());
     },
 
@@ -48,13 +51,6 @@ let API = {
             body: JSON.stringify(editedObject)
         }).then(response => response.json());
 
-    }, getObjectWithDatabase(firstResource, id, secondResource) {
-        return fetch(`${remoteURL}/${firstResource}/${id}?_embed=${secondResource}`)
-            .then(response => response.json())
-    },
-    searchDatabase(search, database, type) {
-        return fetch(`${remoteURL}/${database}?${type}_like=${search}`)
-            .then(response => response.json())
     }
 
 
