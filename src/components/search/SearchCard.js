@@ -21,10 +21,10 @@ class SearchCard extends Component {
                     <h3>
                         {" "}
                         <span className="card-searchResults">
-                            {this.props.result.title}
-                            {this.props.result.release_title}
-                            {this.props.result.year}
-                            <a href={this.props.result.resource_url}><img src={this.props.result.cover_image} /></a>
+                            <ul>{this.props.result.title}</ul>
+                            <ul>{this.props.result.release_title}</ul>
+                            <ul>{this.props.result.year}</ul>
+                            <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} /></a></ul>
                             {/* what will appear on search card */}
                         </span>
                     </h3>
