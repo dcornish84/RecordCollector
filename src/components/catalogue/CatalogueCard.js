@@ -12,21 +12,20 @@ class CatalogueCard extends Component {
         artist: "",
         year: "",
         image: "",
-        comments: "",
         loadingStatus: false,
     }
 
     handleDelete = () => {
         this.setState({ loadingStatus: true });
         API.delete("catalogue", this.props.catalogue.id)
-            .then(() => this.props.history.push("/CatalogueDetail")
+            .then(() => this.props.history.push("/catalogue")
             );
     };
     getAllCatalogue = () => {
         this.setState({ loadingstatus: true });
         API.saveRecord(this.props.catalogue.id)
             .then(() => this.props.getData())
-            .then(() => this.props.history.push("/CatalogueDetail")
+            .then(() => this.props.history.push("/catalogue")
             );
     };
 

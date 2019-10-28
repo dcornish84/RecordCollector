@@ -31,7 +31,7 @@ class CatalogueList extends Component {
                     {this.state.catalogue.map(record =>
                         <CatalogueCard
                             key={record.id}
-                            user={this.props.user}
+                            userId={this.props.user.id}
                             getData={this.getData}
                             artist={record.artist}
                             title={record.title}
