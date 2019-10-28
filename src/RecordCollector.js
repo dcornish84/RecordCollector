@@ -5,7 +5,8 @@ import ApplicationViews from '../src/components/ApplicationViews';
 
 class RecordCollector extends Component {
     state = {
-        user: false
+        user: false,
+        userId: ""
     }
 
 
@@ -18,7 +19,8 @@ class RecordCollector extends Component {
             JSON.stringify(authObj)
         )
         this.setState({
-            user: this.isAuthenticated()
+            user: this.isAuthenticated(),
+            userId: parseInt(sessionStorage.getItem("credentials"))
         });
     }
 
@@ -40,7 +42,7 @@ class RecordCollector extends Component {
         return (
             <>
                 <NavBar user={this.state.user} clearUser={this.clearUser} />
-                <ApplicationViews user={this.state.user}
+                <ApplicationViews userId={this.state.userId}
                     setUser={this.setUser} />
             </>
         )

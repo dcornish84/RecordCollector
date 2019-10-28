@@ -28,5 +28,8 @@ export default {
     getUser(userName) {
         return fetch(`${remoteURL}/users?userName=${userName}`).then(result =>
             result.json())
-    }
+    },
+    getUserEmail(email) {
+        return fetch(`${remoteURL}/users?email=${email}`).then(result => result.json())
+    },
 }

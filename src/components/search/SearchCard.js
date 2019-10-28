@@ -6,7 +6,7 @@ import API from "../../Modules/APIManager";
 class SearchCard extends Component {
 
     state = {
-        userId: parseInt(sessionStorage.getItem("userID")),
+        userId: "",
         title: "",
         artist: "",
         year: "",
@@ -25,21 +25,18 @@ class SearchCard extends Component {
 
         })
         console.log("thanks Dylan", this.props)
-        // console.log("hello", this.props.result.title)
-        // console.log("what's up", this.props.result.year)
-        // console.log("sick", this.props.result.cover_image)
+        let userId = parseInt(sessionStorage.getItem("credentials"))
         const newRecord = {
             title: this.props.result.title,
             year: this.props.result.year,
             image: this.props.result.cover_image,
             comments: this.state.comments,
-            userId: this.state.userId
+            userId: userId
         }
+        console.log("props", this.props.userId)
         API.saveRecord(newRecord)
             .then(() => this.props.history.push("/catalogue"))
     }
-
-    // build an object based on my ERD here
 
     handleSaveWishlist = () => {
         API.saveRecordWishlist(this.props.result.id)
@@ -57,7 +54,7 @@ class SearchCard extends Component {
                             <ul>{this.props.result.title}</ul>
                             <ul>{this.props.result.release_title}</ul>
                             <ul>{this.props.result.year}</ul>
-                            <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} /></a></ul>
+                            <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} alt="" /></a></ul>
                             {/* what will appear on search card */}
                         </span>
                     </h3>

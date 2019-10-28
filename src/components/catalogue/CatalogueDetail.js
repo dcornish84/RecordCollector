@@ -6,7 +6,7 @@ import CatalogueList from "./CatalogueList"
 class CatalogueDetails extends Component {
     state = {
         catalogue: [],
-        userId: parseInt(sessionStorage.getItem("userID")),
+        userId: "",
         title: "",
         artist: "",
         year: "",
@@ -23,10 +23,13 @@ class CatalogueDetails extends Component {
     }
 
     getData = () => {
+        let userId = this.props.getUser()
+        console.log("YOOO", userId)
         API.getAll("catalogue", sessionStorage.getItem("userId")).then(
             catalogue => {
                 this.setState({
-                    catalogue: catalogue
+                    catalogue: catalogue,
+                    user: userId,
                 });
             }
         );

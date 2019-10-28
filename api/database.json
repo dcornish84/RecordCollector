@@ -27,60 +27,81 @@
   ],
   "catalogue": [
     {
-      "title": "Nirvana - Nevermind",
-      "year": "",
-      "image": "",
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
       "userId": null,
-      "id": 13
+      "id": 1
+    },
+    {
+      "title": "Nirvana - Nirvana",
+      "year": "2015",
+      "image": "https://img.discogs.com/-uapQ89XnDAx5DYVWer-KlVCnGY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7445961-1572274823-6989.jpeg.jpg",
+      "userId": null,
+      "id": 2
+    },
+    {
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "userId": null,
+      "id": 3
     },
     {
       "title": "The Beatles - Abbey Road",
       "year": "1969",
       "image": "https://img.discogs.com/jwmEhAbhbtJRNugbUvyehTPwJLs=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2498807-1425279296-1235.jpeg.jpg",
       "userId": null,
-      "id": 14
+      "id": 4
     },
     {
-      "title": "Phil Spector - Phil Spector's Greatest Hits",
-      "year": "1977",
-      "image": "https://img.discogs.com/PUIZRHj5JWSoQ3kOpgeVkbyjyQE=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3703588-1341357037-2943.jpeg.jpg",
+      "title": "Nirvana - Nevermind",
+      "year": "2015",
+      "image": "https://img.discogs.com/KXIJ0YTFJb6U-iu7aWeoZyQJ0iI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7097051-1556444180-7505.jpeg.jpg",
       "userId": null,
-      "id": 15
+      "id": 5
     },
     {
-      "title": "Lizzo - Lizzobangers",
-      "year": "2014",
-      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
+      "title": "The Beatles - Abbey Road",
+      "year": "2012",
+      "image": "https://img.discogs.com/wrBrK3oZd5kkZP_cOyRnp_aYUJ4=/fit-in/600x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4042258-1354863628-3014.jpeg.jpg",
       "userId": null,
-      "id": 16
+      "id": 6
     },
     {
-      "title": "The Beatles - The Beatles",
-      "year": "1968",
-      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "title": "Nirvana - Nirvana",
+      "year": "2015",
+      "image": "https://img.discogs.com/-uapQ89XnDAx5DYVWer-KlVCnGY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7445961-1572274823-6989.jpeg.jpg",
       "userId": null,
-      "id": 17
+      "id": 7
     },
     {
-      "title": "The Beatles - The Beatles",
-      "year": "1968",
-      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "title": "The Beatles - Abbey Road",
+      "year": "1969",
+      "image": "https://img.discogs.com/jwmEhAbhbtJRNugbUvyehTPwJLs=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2498807-1425279296-1235.jpeg.jpg",
       "userId": null,
-      "id": 18
+      "id": 8
     },
     {
-      "title": "Eazy-E - Eazy-Duz-It",
-      "year": "1988",
-      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
-      "userId": null,
-      "id": 19
+      "title": "The Beatles - With The Beatles",
+      "year": "2017",
+      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
+      "userId": 4,
+      "id": 9
     },
     {
-      "title": "Elvis Presley - Elvis",
-      "year": "1973",
-      "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
-      "userId": null,
-      "id": 20
+      "title": "Nirvana - Nevermind",
+      "year": "2015",
+      "image": "https://img.discogs.com/KXIJ0YTFJb6U-iu7aWeoZyQJ0iI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7097051-1556444180-7505.jpeg.jpg",
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "title": "Herbie Mann & The Bill Evans Trio - Nirvana",
+      "year": "1964",
+      "image": "https://img.discogs.com/QL1vkGtK_iX4qkLastdSL002aYA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2072692-1443250831-2880.jpeg.jpg",
+      "userId": 1,
+      "id": 11
     }
   ],
   "wishlist": [

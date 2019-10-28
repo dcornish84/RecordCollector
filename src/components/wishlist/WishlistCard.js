@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Link } from "react-router-dom";
 import API from '../../Modules/APIManager'
-import { Card, CardTitle, CardSubtitle, Button, Media } from "reactstrap";
+import { Card, CardTitle, CardSubtitle, Button, } from "reactstrap";
 import CardBody from 'reactstrap/lib/CardBody';
 // import CardImg from 'reactstrap/lib/CardImg';
 
