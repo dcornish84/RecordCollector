@@ -24,5 +24,9 @@ export default {
             user: this.isAuthenticated(),
             userId: authObj.id
         });
+    },
+    getUser(userName) {
+        return fetch(`${remoteURL}/users?userName=${userName}`).then(result =>
+            result.json())
     }
 }

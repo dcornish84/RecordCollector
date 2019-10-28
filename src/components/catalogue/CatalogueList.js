@@ -7,7 +7,6 @@ class CatalogueList extends Component {
     //This holds the state of the Catalogue
     state = {
         catalogue: [],
-        loadingStatus: true,
     }
 
     componentDidMount() {
@@ -22,7 +21,7 @@ class CatalogueList extends Component {
 
 
     render() {
-
+        console.log(this.state.catalogue)
         return (
             <>
                 <div>
@@ -35,10 +34,11 @@ class CatalogueList extends Component {
                             user={this.props.user}
                             getData={this.getData}
                             artist={record.artist}
-                            title={record.release_title}
+                            title={record.title}
                             date={record.year}
                             deleteEvent={this.deleteEvent}
-                            {...this.props} />)}
+                            {...this.props}
+                            className="card" />)}
                 </div>
 
             </>

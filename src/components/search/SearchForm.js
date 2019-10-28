@@ -42,7 +42,7 @@ class SearchForm extends Component {
                                 required
                                 onChange={this.handleFieldChange}
                                 id="searchResult"
-                                placeholder="Search"
+                                placeholder="Search for artist or release"
                             />
                             <label htmlFor="searchResult">Search</label>
                         </div>

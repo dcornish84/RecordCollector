@@ -17,22 +17,78 @@
       "email": "jones@aol.com",
       "password": "1234",
       "id": 3
+    },
+    {
+      "name": "dyl",
+      "email": "pickle@yahoo.com",
+      "password": "1234",
+      "id": 4
     }
   ],
   "catalogue": [
     {
-      "id": 1
+      "title": "Nirvana - Nevermind",
+      "year": "",
+      "image": "",
+      "userId": null,
+      "id": 13
     },
     {
-      "id": 2
+      "title": "The Beatles - Abbey Road",
+      "year": "1969",
+      "image": "https://img.discogs.com/jwmEhAbhbtJRNugbUvyehTPwJLs=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2498807-1425279296-1235.jpeg.jpg",
+      "userId": null,
+      "id": 14
     },
     {
-      "id": 3
+      "title": "Phil Spector - Phil Spector's Greatest Hits",
+      "year": "1977",
+      "image": "https://img.discogs.com/PUIZRHj5JWSoQ3kOpgeVkbyjyQE=/fit-in/600x589/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3703588-1341357037-2943.jpeg.jpg",
+      "userId": null,
+      "id": 15
+    },
+    {
+      "title": "Lizzo - Lizzobangers",
+      "year": "2014",
+      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
+      "userId": null,
+      "id": 16
+    },
+    {
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "userId": null,
+      "id": 17
+    },
+    {
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "userId": null,
+      "id": 18
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "userId": null,
+      "id": 19
+    },
+    {
+      "title": "Elvis Presley - Elvis",
+      "year": "1973",
+      "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
+      "userId": null,
+      "id": 20
     }
   ],
   "wishlist": [
     {
       "id": 1
+    },
+    {
+      "id": 2
     }
   ]
 }

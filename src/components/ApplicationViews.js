@@ -36,7 +36,7 @@ class ApplicationViews extends Component {
                 <Route exact path="/catalogue" render={(props) => {
                     return <CatalogueDetails user={this.props.user} setUser={this.props.setUser} {...props} />
                 }} />
-                <Route exact path="/catalogue" render={(props) => {
+                <Route exact path="/catalogues" render={(props) => {
                     return <CatalogueList user={this.props.user} setUser={this.props.setUser} {...props} />
                 }} />
                 <Route exact path="/wishlist" render={(props) => {

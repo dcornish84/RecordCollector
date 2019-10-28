@@ -26,7 +26,7 @@ class Login extends Component {
             the customer enters into local storage.
         */
         let credentials = { email: this.state.email, password: this.state.password }
-        AuthManager.getUserData(this.state.email)
+        AuthManager.getUser(credentials)
             .then(result => {
                 console.log(result)
                 if (result.length > 0) {

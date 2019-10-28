@@ -6,6 +6,12 @@ import CatalogueList from "./CatalogueList"
 class CatalogueDetails extends Component {
     state = {
         catalogue: [],
+        userId: parseInt(sessionStorage.getItem("userID")),
+        title: "",
+        artist: "",
+        year: "",
+        image: "",
+        comments: "",
         loadingStatus: true,
     }
 
@@ -30,9 +36,6 @@ class CatalogueDetails extends Component {
         this.getData();
     }
 
-    newCatalogue = () => {
-        this.props.getData();
-    }
 
     render() {
 
@@ -43,8 +46,8 @@ class CatalogueDetails extends Component {
                         <section className="catalogueDetail">
                             <CatalogueList
                                 artist={this.state.artist}
-                                title={this.state.title}
-                                date={this.state.date}
+                                title={this.state.release_title}
+                                date={this.state.year}
                                 getData={this.getData}
                                 {...this.props}
                             />

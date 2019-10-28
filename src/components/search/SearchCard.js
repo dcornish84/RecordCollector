@@ -4,15 +4,48 @@ import { Button } from "reactstrap";
 import API from "../../Modules/APIManager";
 
 class SearchCard extends Component {
-    handleSaveCatalogue = id => {
-        API.saveRecord(id).then(() => this.props.newSearch())
-        this.props.history.push("/catalogue");
+
+    state = {
+        userId: parseInt(sessionStorage.getItem("userID")),
+        title: "",
+        artist: "",
+        year: "",
+        image: "",
+        // comments: ""
     };
 
-    handleSaveWishlist = id => {
-        API.saveRecordWishlist(id).then(() => this.props.newSearch())
+
+    handleSaveCatalogue = () => {
+        this.setState({
+            title: this.props.result.title,
+            // artist:
+            year: this.props.result.year,
+            image: this.props.result.cover_image,
+            // comments: ""
+
+        })
+        console.log("thanks Dylan", this.props)
+        // console.log("hello", this.props.result.title)
+        // console.log("what's up", this.props.result.year)
+        // console.log("sick", this.props.result.cover_image)
+        const newRecord = {
+            title: this.props.result.title,
+            year: this.props.result.year,
+            image: this.props.result.cover_image,
+            comments: this.state.comments,
+            userId: this.state.userId
+        }
+        API.saveRecord(newRecord)
+            .then(() => this.props.history.push("/catalogue"))
+    }
+
+    // build an object based on my ERD here
+
+    handleSaveWishlist = () => {
+        API.saveRecordWishlist(this.props.result.id)
         this.props.history.push("/wishlist");
     };
+
     render() {
         return (
 
@@ -33,14 +66,14 @@ class SearchCard extends Component {
                     </div>
                     <Button
                         type="button"
-                        onClick={() => this.handleSaveCatalogue(this.props.release_title)}>
+                        onClick={() => this.handleSaveCatalogue()}>
                         Add to Catalogue
 				</Button>
                 </div>
                 <div>
                     <Button
                         type="button"
-                        onClick={() => this.handleSaveWishlist(this.props.release_title)}>
+                        onClick={() => this.handleSaveWishlist()}>
                         Add to Wishlist
 				</Button>
                 </div>

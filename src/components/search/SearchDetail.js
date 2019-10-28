@@ -21,7 +21,7 @@ class SearchDetail extends Component {
         API.recordSearch(this.props.searchResults)
             .then((record) => {
                 this.setState({
-                    name: record.name,
+                    name: record.release_title,
                     loadingStatus: false
                 });
             });

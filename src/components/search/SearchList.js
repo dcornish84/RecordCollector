@@ -29,7 +29,6 @@ class SearchList extends Component {
     }
 
     render() {
-        console.log(this.state.searchResults)
         return (
             <>
                 <div className="searchBtnDiv">
@@ -37,7 +36,7 @@ class SearchList extends Component {
                         className="form-control mr-sm-2"
                         type="search"
                         id="search"
-                        placeholder="Search"
+                        placeholder="Search for artist or release"
                         aria-label="Search"
                         onChange={this.handleFieldChange}
                     ></Input>
@@ -52,9 +51,10 @@ class SearchList extends Component {
                 </div>
                 <>
                     {this.state.searchResults.map(result =>
-                        <div>
+                        <div key={result.id}>
+
                             <SearchCard
-                                key={result.id}
+
                                 result={result}
                                 {...this.props}
                                 newSearch={this.newSearch} />
