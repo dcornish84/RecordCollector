@@ -27,8 +27,8 @@ class WishlistCard extends Component {
             <div><Card className="card">
 
                 <CardBody className="wishlistCard">
-                    <CardTitle>Record: <span className="cardRecordName">{this.props.title}</span></CardTitle>
-                    <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
+                    <CardTitle> <span className="cardRecordName">{this.props.title}</span></CardTitle>
+                    <CardSubtitle> {this.props.date} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
                     <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.wishlists.id}/edit`) }}>Notes</Button>
                     <Button type="button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>

@@ -11,18 +11,16 @@ class SearchCard extends Component {
         artist: "",
         year: "",
         image: "",
+        notes: "",
         status: "true"
-        // comments: ""
     };
 
 
     handleSaveCatalogue = () => {
         this.setState({
             title: this.props.result.title,
-            // artist:
             year: this.props.result.year,
             image: this.props.result.cover_image,
-            // comments: ""
 
         })
         let userId = parseInt(sessionStorage.getItem("credentials"))
@@ -30,11 +28,10 @@ class SearchCard extends Component {
             title: this.props.result.title,
             year: this.props.result.year,
             image: this.props.result.cover_image,
-            comments: this.state.comments,
             status: this.state.status,
+            notes: this.props.notes,
             userId: userId
         }
-        console.log("props", this.props.userId)
         API.saveRecord(newRecord)
             .then(() => this.props.history.push("/catalogue"))
     };
@@ -42,10 +39,8 @@ class SearchCard extends Component {
     handleSaveWishlist = () => {
         this.setState({
             title: this.props.result.title,
-            // artist:
             year: this.props.result.year,
             image: this.props.result.cover_image,
-            // comments: ""
 
         })
         let userId = parseInt(sessionStorage.getItem("credentials"))
@@ -55,9 +50,9 @@ class SearchCard extends Component {
             image: this.props.result.cover_image,
             comments: this.state.comments,
             status: this.state.status,
+            notes: this.props.notes,
             userId: userId
         }
-        console.log("props", this.props.userId)
         API.saveRecordWishlist(newRecordWishlist)
             .then(() => this.props.history.push("/wishlist"))
     }

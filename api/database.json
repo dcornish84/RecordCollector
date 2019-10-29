@@ -71,7 +71,48 @@
       "status": "true",
       "userId": 1,
       "id": 17
+    },
+    {
+      "title": "Johnny Cash - Johnny Cash At San Quentin",
+      "year": "1969",
+      "image": "https://img.discogs.com/DZdBFw6Merboa0Uw4Q1cfyq4VrE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1595647-1433829954-8033.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "title": "ODB* - ODB, Don't Go Breaking My Heart",
+      "year": "2005",
+      "image": "https://img.discogs.com/ivZEtgS-hjxBFidQIsbIUMLZqmw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-872306-1226467455.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "title": "Queen - Queen II",
+      "year": "2008",
+      "image": "https://img.discogs.com/-Z-yAzbj-urmqSOreQIuj3VxSBU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3110951-1324246622.png.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 21
     }
   ],
-  "wishlists": []
+  "wishlists": [
+    {
+      "title": "Beastie Boys - Licensed To Ill",
+      "year": "2016",
+      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
