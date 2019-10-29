@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CatalogueCard from "./CatalogueCard";
 import API from '../../Modules/APIManager';
+// import WishlistCard from '../wishlist/WishlistCard';
 
 
 class CatalogueList extends Component {
@@ -60,21 +61,23 @@ class CatalogueList extends Component {
         return (
             <>
                 <div>
-                    {/* <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button> */}
-                </div>
-                <div>
-                    {this.state.catalogue.map(record =>
-                        <CatalogueCard
-                            key={record.id}
-                            id={record.id}
-                            getData={this.getData}
-                            artist={record.artist}
-                            title={record.title}
-                            image={record.image}
-                            date={record.year}
-                            handleDelete={this.handleDelete}
-                            {...this.props}
-                            className="card" />)}
+                    {this.state.catalogue.map(record => {
+                        return record.status === "true" ?
+
+                            <CatalogueCard
+                                key={record.id}
+                                id={record.id}
+                                getData={this.getData}
+                                artist={record.artist}
+                                title={record.title}
+                                image={record.image}
+                                date={record.year}
+                                handleDelete={this.handleDelete}
+                                {...this.props}
+                                className="card" />
+                            : null
+                    }
+                    )}
                 </div>
 
             </>

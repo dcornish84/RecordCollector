@@ -10,6 +10,7 @@ class WishlistCard extends Component {
         artist: "",
         year: "",
         image: "",
+        status: "true",
         loadingStatus: false,
     }
 
@@ -35,7 +36,7 @@ class WishlistCard extends Component {
                     <CardTitle>Record: <span className="cardRecordName">{this.props.title}</span></CardTitle>
                     <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
-                    <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.wishlists.id}/edit`) }}>Edit Details</Button>
+                    <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.wishlists.id}/edit`) }}>Notes</Button>
                     <Button type="button" onClick={() => this.handleDelete(this.props.wishlists.id)}>Delete</Button>
                 </CardBody>
             </Card>
