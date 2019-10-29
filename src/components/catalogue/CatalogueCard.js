@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-// import { Link } from "react-router-dom";
 import API from '../../Modules/APIManager'
-import { Card, CardTitle, CardSubtitle, Button, CardImg, } from "reactstrap";
-import CardBody from 'reactstrap/lib/CardBody';
-// import CardImg from 'reactstrap/lib/CardImg';
+import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody } from "reactstrap";
+
 
 class CatalogueCard extends Component {
     state = {
-        userId: parseInt(sessionStorage.getItem("userID")),
+        userId: parseInt(sessionStorage.getItem("credentials")),
         title: "",
         artist: "",
         year: "",
@@ -17,7 +15,7 @@ class CatalogueCard extends Component {
 
     handleDelete = () => {
         this.setState({ loadingStatus: true });
-        API.delete("catalogue", this.props.catalogue.id)
+        API.delete("catalogue", this.props.id)
             .then(() => this.props.history.push("/catalogue")
             );
     };
@@ -30,16 +28,15 @@ class CatalogueCard extends Component {
     };
 
     render() {
-        console.log(this.props)
         return (
             <div><Card className="card">
 
                 <CardBody className="catalogueCard">
-                    <CardTitle>Record: <span className="cardRecordName">{this.props.catalogue.title}</span></CardTitle>
-                    <CardSubtitle>Artist: {this.props.catalogue.artist} </CardSubtitle >
-                    <CardImg src={this.props.result.cover_image}></CardImg>
-                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.catalogue.id}/edit`) }}>Edit Details</Button>
-                    <Button type="button" onClick={() => this.handleDelete(this.props.catalogue.id)}>Delete</Button>
+                    <CardTitle>Record: <span className="cardRecordName">{this.props.title}</span></CardTitle>
+                    <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
+                    <CardImg src={this.props.image}></CardImg>
+                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Edit Details</Button>
+                    <Button type="button" onClick={() => this.handleDelete(this.props.id)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >

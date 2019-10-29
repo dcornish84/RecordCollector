@@ -16,7 +16,6 @@ class ApplicationViews extends Component {
     isAuthenticated = () => localStorage.getItem("credentials") !== null
 
     render() {
-        console.log("main props", this.props)
         return (
             <React.Fragment>
                 <Route exact path="/" render={(props) => {

@@ -25,7 +25,7 @@ class CatalogueDetails extends Component {
     getData = () => {
         let userId = this.props.getUser()
         console.log("YOOO", userId)
-        API.getAll("catalogue", sessionStorage.getItem("userId")).then(
+        API.getAll("catalogue", sessionStorage.getItem("credentials")).then(
             catalogue => {
                 this.setState({
                     catalogue: catalogue,

@@ -102,14 +102,42 @@
       "image": "https://img.discogs.com/QL1vkGtK_iX4qkLastdSL002aYA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2072692-1443250831-2880.jpeg.jpg",
       "userId": 1,
       "id": 11
-    }
-  ],
-  "wishlist": [
-    {
-      "id": 1
     },
     {
-      "id": 2
+      "title": "Fiona Apple - Tidal",
+      "year": "2017",
+      "image": "https://img.discogs.com/XAJGVUQkWTH1eOt7YxnFroq-d3U=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10241165-1501774120-1339.jpeg.jpg",
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "title": "Nirvana - Nirvana",
+      "year": "2015",
+      "image": "https://img.discogs.com/-uapQ89XnDAx5DYVWer-KlVCnGY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7445961-1572274823-6989.jpeg.jpg",
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "title": "Prince And The Revolution - Purple Rain",
+      "year": "1984",
+      "image": "https://img.discogs.com/y5dPt_abuCYEhVj-JKQF1-Q3Dq8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-194021-1335400289.jpeg.jpg",
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "title": "The Woolen Men - The Woolen Men",
+      "year": "2013",
+      "image": "https://img.discogs.com/nyzOqBYriwHYdVJ1Wl0LVSCN4bs=/fit-in/380x380/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4450211-1365212535-7769.jpeg.jpg",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "userId": 1,
+      "id": 16
     }
-  ]
+  ],
+  "wishlist": []
 }
