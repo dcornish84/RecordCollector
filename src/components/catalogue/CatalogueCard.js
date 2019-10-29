@@ -13,12 +13,12 @@ class CatalogueCard extends Component {
         loadingStatus: false,
     }
 
-    handleDelete = () => {
-        this.setState({ loadingStatus: true });
-        API.delete("catalogue", this.props.id)
-            .then(() => this.props.history.push("/catalogue")
-            );
-    };
+    // handleDelete = (id) => {
+    //     this.setState({ loadingStatus: true });
+    //     API.delete("catalogue", id)
+    //         .then(() => this.props.getData());
+    // };
+
     getAllCatalogue = () => {
         this.setState({ loadingstatus: true });
         API.saveRecord(this.props.catalogue.id)
@@ -28,6 +28,7 @@ class CatalogueCard extends Component {
     };
 
     render() {
+        console.log(this.props.id)
         return (
             <div><Card className="card">
 
@@ -36,7 +37,7 @@ class CatalogueCard extends Component {
                     <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
                     <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Edit Details</Button>
-                    <Button type="button" onClick={() => this.handleDelete(this.props.id)}>Delete</Button>
+                    <Button type="button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >

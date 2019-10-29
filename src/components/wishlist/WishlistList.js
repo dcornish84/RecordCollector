@@ -48,6 +48,7 @@ class WishlistList extends Component {
                             artist={record.artist}
                             title={record.title}
                             date={record.year}
+                            image={record.image}
                             deleteEvent={this.deleteEvent}
                             {...this.props}
                             className="card" />)}

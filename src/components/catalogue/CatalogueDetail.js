@@ -15,16 +15,11 @@ class CatalogueDetails extends Component {
         loadingStatus: true,
     }
 
-    handleDelete = () => {
-        //invoke the delete function in APIManger and re-direct to the CatalogueList.
-        this.setState({ loadingStatus: true })
-        API.delete("catalogue", this.props.id)
-            .then(() => this.props.history.push("/catalogue"))
-    }
+
+
 
     getData = () => {
         let userId = this.props.getUser()
-        console.log("YOOO", userId)
         API.getAll("catalogue", sessionStorage.getItem("credentials")).then(
             catalogue => {
                 this.setState({
@@ -51,6 +46,8 @@ class CatalogueDetails extends Component {
                                 artist={this.state.artist}
                                 title={this.state.release_title}
                                 date={this.state.year}
+                                id={this.state.id}
+                                handleDelete={this.handleDelete}
                                 getData={this.getData}
                                 {...this.props}
                             />
