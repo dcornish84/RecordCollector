@@ -137,7 +137,36 @@
       "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
       "userId": 1,
       "id": 16
+    },
+    {
+      "title": "Arcade Fire - Funeral",
+      "year": "2009",
+      "image": "https://img.discogs.com/QVYZQLVsjqw3eD3meaFhiUZyAiI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2093841-1489331470-7394.jpeg.jpg",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "userId": 1,
+      "id": 19
     }
   ],
-  "wishlist": []
+  "wishlists": [
+    {
+      "title": "Arcade Fire - Everything Now",
+      "year": "2017",
+      "image": "https://img.discogs.com/UaKZuj9jY9kSoLC7FrdbUF1urdM=/fit-in/496x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10380586-1501358559-1347.jpeg.jpg",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }

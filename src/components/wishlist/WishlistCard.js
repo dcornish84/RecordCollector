@@ -15,13 +15,13 @@ class WishlistCard extends Component {
 
     handleDelete = () => {
         this.setState({ loadingStatus: true });
-        API.delete("wishlist", this.props.wishlist.id)
+        API.delete("wishlist", this.props.wishlists.id)
             .then(() => this.props.history.push("/wishlist")
             );
     };
     getAllWishlist = () => {
         this.setState({ loadingstatus: true });
-        API.saveRecordWishlist(this.props.wishlist.id)
+        API.saveRecordWishlist(this.props.wishlists.id)
             .then(() => this.props.getData())
             .then(() => this.props.history.push("/wishlist")
             );
@@ -35,8 +35,8 @@ class WishlistCard extends Component {
                     <CardTitle>Record: <span className="cardRecordName">{this.props.title}</span></CardTitle>
                     <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
-                    <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.wishlist.id}/edit`) }}>Edit Details</Button>
-                    <Button type="button" onClick={() => this.handleDelete(this.props.wishlist.id)}>Delete</Button>
+                    <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.wishlists.id}/edit`) }}>Edit Details</Button>
+                    <Button type="button" onClick={() => this.handleDelete(this.props.wishlists.id)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >
