@@ -19,6 +19,29 @@ class CatalogueList extends Component {
         });
     };
 
+    // deleteRecord = id => {
+    //     API.delete("catalogue", id)
+    //         .then(() => {
+    //             API.getAll("catalogue")
+    //                 .then((catalogue) => {
+    //                     this.setState({
+    //                         catalogue: catalogue
+    //                     })
+    //                     this.getData()
+
+    //                 })
+    //         })
+    // }
+
+    handleDelete = id => {
+        //invoke the delete function in APIManger and re-direct to the CatalogueList.
+        this.setState({ loadingStatus: true })
+        API.delete("catalogue", id)
+            .then(() => {
+                this.getData()
+            })
+    }
+
 
 
     componentDidMount() {
@@ -43,12 +66,13 @@ class CatalogueList extends Component {
                     {this.state.catalogue.map(record =>
                         <CatalogueCard
                             key={record.id}
-                            // userId={this.props.user.id}
+                            id={record.id}
                             getData={this.getData}
                             artist={record.artist}
                             title={record.title}
+                            image={record.image}
                             date={record.year}
-                            deleteEvent={this.deleteEvent}
+                            handleDelete={this.handleDelete}
                             {...this.props}
                             className="card" />)}
                 </div>

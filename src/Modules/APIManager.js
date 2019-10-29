@@ -11,9 +11,6 @@ let API = {
     artistSearch(record) {
         return fetch(`https://api.discogs.com//database/search?q=${record}&type=release&release_title&year&per_page=100&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
     },
-    // releaseSearch(release) {
-    //     return fetch(`https://api.discogs.com/artists/${release}/releases&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
-    // },
     saveRecord: recordSave => {
         return fetch(`${remoteURL}/catalogue`, {
             method: "POST",
