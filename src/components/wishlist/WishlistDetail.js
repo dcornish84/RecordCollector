@@ -50,6 +50,7 @@ class WishlistDetails extends Component {
                                 artist={this.state.artist}
                                 title={this.state.release_title}
                                 date={this.state.year}
+                                handleDelete={this.handleDelete}
                                 getData={this.getData}
                                 {...this.props}
                             />

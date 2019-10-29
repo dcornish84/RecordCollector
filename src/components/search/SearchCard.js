@@ -54,6 +54,7 @@ class SearchCard extends Component {
             year: this.props.result.year,
             image: this.props.result.cover_image,
             comments: this.state.comments,
+            status: this.state.status,
             userId: userId
         }
         console.log("props", this.props.userId)

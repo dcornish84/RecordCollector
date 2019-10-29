@@ -19,6 +19,15 @@ class WishlistList extends Component {
         });
     };
 
+    handleDelete = id => {
+        //invoke the delete function in APIManger and re-direct to the CatalogueList.
+        this.setState({ loadingStatus: true })
+        API.delete("wishlists", id)
+            .then(() => {
+                this.getData()
+            })
+    }
+
 
 
     componentDidMount() {

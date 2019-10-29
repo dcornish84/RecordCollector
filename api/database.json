@@ -43,14 +43,6 @@
       "status": "false"
     },
     {
-      "title": "The Beatles - With The Beatles",
-      "year": "1963",
-      "image": "https://img.discogs.com/A5d0DW0UJrSkkqraPIxUm5B8zNU=/fit-in/598x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-768729-1300115438.jpeg.jpg",
-      "userId": 1,
-      "id": 12,
-      "status": "true"
-    },
-    {
       "title": "Lizzo - Lizzobangers",
       "year": "2014",
       "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
@@ -81,22 +73,5 @@
       "id": 17
     }
   ],
-  "wishlists": [
-    {
-      "title": "Arcade Fire - Everything Now",
-      "year": "2017",
-      "image": "https://img.discogs.com/UaKZuj9jY9kSoLC7FrdbUF1urdM=/fit-in/496x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10380586-1501358559-1347.jpeg.jpg",
-      "userId": 1,
-      "id": 1,
-      "status": "true"
-    },
-    {
-      "title": "Lizzo - Lizzobangers",
-      "year": "2014",
-      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
-      "userId": 1,
-      "id": 2,
-      "status": "true"
-    }
-  ]
+  "wishlists": []
 }
