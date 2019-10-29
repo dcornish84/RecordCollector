@@ -6,6 +6,12 @@ import WishlistList from "./WishlistList"
 class WishlistDetails extends Component {
     state = {
         wishlist: [],
+        userId: "",
+        title: "",
+        artist: "",
+        year: "",
+        image: "",
+        comments: "",
         loadingStatus: true,
     }
 
@@ -17,10 +23,12 @@ class WishlistDetails extends Component {
     }
 
     getData = () => {
-        API.getAll("wishlist", sessionStorage.getItem("userId")).then(
+        let userId = this.props.getUser()
+        API.getAll("wishlist", sessionStorage.getItem("credentials")).then(
             wishlist => {
                 this.setState({
-                    wishlist: wishlist
+                    wishlist: wishlist,
+                    user: userId,
                 });
             }
         );
@@ -30,9 +38,6 @@ class WishlistDetails extends Component {
         this.getData();
     }
 
-    newWishlist = () => {
-        this.props.getData();
-    }
 
     render() {
 
@@ -43,8 +48,8 @@ class WishlistDetails extends Component {
                         <section className="wishlistDetail">
                             <WishlistList
                                 artist={this.state.artist}
-                                title={this.state.title}
-                                date={this.state.date}
+                                title={this.state.release_title}
+                                date={this.state.year}
                                 getData={this.getData}
                                 {...this.props}
                             />

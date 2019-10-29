@@ -4,16 +4,28 @@ import API from '../../Modules/APIManager';
 
 
 class WishlistList extends Component {
-    //This holds the state of the Wishlist
+    //This holds the state of the Catalogue
     state = {
         wishlist: [],
         loadingStatus: true,
     }
 
+    getData = () => {
+        let userId = parseInt(sessionStorage.getItem('credentials'));
+        API.getAllWishlist(userId).then(wishlist => {
+            this.setState({
+                wishlist: wishlist
+            });
+        });
+    };
+
+
+
     componentDidMount() {
         //getAll from APIManager and hang on to that data; put it in state
-        API.getAllWishlist()
-            .then((wishlist) => {
+        let userId = parseInt(sessionStorage.getItem('credentials'));
+        API.getAllWishlist(userId)
+            .then(wishlist => {
                 this.setState({
                     wishlist: wishlist
                 })
@@ -22,7 +34,6 @@ class WishlistList extends Component {
 
 
     render() {
-
         return (
             <>
                 <div>
@@ -32,13 +43,14 @@ class WishlistList extends Component {
                     {this.state.wishlist.map(record =>
                         <WishlistCard
                             key={record.id}
-                            user={this.props.user}
+                            userId={this.props.user.id}
                             getData={this.getData}
                             artist={record.artist}
-                            title={record.release_title}
+                            title={record.title}
                             date={record.year}
                             deleteEvent={this.deleteEvent}
-                            {...this.props} />)}
+                            {...this.props}
+                            className="card" />)}
                 </div>
 
             </>

@@ -7,12 +7,25 @@ class CatalogueList extends Component {
     //This holds the state of the Catalogue
     state = {
         catalogue: [],
+        loadingStatus: true,
     }
+
+    getData = () => {
+        let userId = parseInt(sessionStorage.getItem('credentials'));
+        API.getAllCatalogue(userId).then(catalogue => {
+            this.setState({
+                catalogue: catalogue
+            });
+        });
+    };
+
+
 
     componentDidMount() {
         //getAll from APIManager and hang on to that data; put it in state
-        API.getAllCatalogue()
-            .then((catalogue) => {
+        let userId = parseInt(sessionStorage.getItem('credentials'));
+        API.getAllCatalogue(userId)
+            .then(catalogue => {
                 this.setState({
                     catalogue: catalogue
                 })
@@ -21,7 +34,6 @@ class CatalogueList extends Component {
 
 
     render() {
-        console.log(this.state.catalogue)
         return (
             <>
                 <div>
@@ -31,7 +43,7 @@ class CatalogueList extends Component {
                     {this.state.catalogue.map(record =>
                         <CatalogueCard
                             key={record.id}
-                            userId={this.props.user.id}
+                            // userId={this.props.user.id}
                             getData={this.getData}
                             artist={record.artist}
                             title={record.title}
