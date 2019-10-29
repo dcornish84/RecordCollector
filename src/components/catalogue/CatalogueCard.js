@@ -10,6 +10,7 @@ class CatalogueCard extends Component {
         artist: "",
         year: "",
         image: "",
+        status: "true",
         loadingStatus: false,
     }
 
@@ -28,15 +29,16 @@ class CatalogueCard extends Component {
     };
 
     render() {
-        console.log(this.props.id)
+
         return (
+
             <div><Card className="card">
 
                 <CardBody className="catalogueCard">
                     <CardTitle>Record: <span className="cardRecordName">{this.props.title}</span></CardTitle>
                     <CardSubtitle>Artist: {this.props.artist} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
-                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Edit Details</Button>
+                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Notes</Button>
                     <Button type="button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>
                 </CardBody>
             </Card>

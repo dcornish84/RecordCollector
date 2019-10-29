@@ -19,6 +19,15 @@ class WishlistList extends Component {
         });
     };
 
+    handleDelete = id => {
+        //invoke the delete function in APIManger and re-direct to the CatalogueList.
+        this.setState({ loadingStatus: true })
+        API.delete("wishlists", id)
+            .then(() => {
+                this.getData()
+            })
+    }
+
 
 
     componentDidMount() {
@@ -36,22 +45,25 @@ class WishlistList extends Component {
     render() {
         return (
             <>
+
                 <div>
-                    {/* <Button color="danger" onClick={() => { this.props.history.push("/catalogue") }}>Add to Catalogue</Button> */}
-                </div>
-                <div>
-                    {this.state.wishlists.map(record =>
-                        <WishlistCard
-                            key={record.id}
-                            userId={this.props.userID}
-                            getData={this.getData}
-                            artist={record.artist}
-                            title={record.title}
-                            date={record.year}
-                            image={record.image}
-                            deleteEvent={this.deleteEvent}
-                            {...this.props}
-                            className="card" />)}
+                    {this.state.wishlists.map(record => {
+                        return record.status === "true" ?
+
+                            <WishlistCard
+                                key={record.id}
+                                id={record.id}
+                                getData={this.getData}
+                                artist={record.artist}
+                                title={record.title}
+                                image={record.image}
+                                date={record.year}
+                                handleDelete={this.handleDelete}
+                                {...this.props}
+                                className="card" />
+                            : null
+                    }
+                    )}
                 </div>
 
             </>
