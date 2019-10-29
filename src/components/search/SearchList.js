@@ -29,7 +29,6 @@ class SearchList extends Component {
     }
 
     render() {
-        console.log("hey there", this.props.userId)
         return (
             <>
                 <div className="searchBtnDiv">

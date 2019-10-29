@@ -5,7 +5,7 @@ import WishlistList from "./WishlistList"
 
 class WishlistDetails extends Component {
     state = {
-        wishlist: [],
+        wishlists: [],
         userId: "",
         title: "",
         artist: "",
@@ -25,9 +25,9 @@ class WishlistDetails extends Component {
     getData = () => {
         let userId = this.props.getUser()
         API.getAll("wishlist", sessionStorage.getItem("credentials")).then(
-            wishlist => {
+            wishlists => {
                 this.setState({
-                    wishlist: wishlist,
+                    wishlists: wishlists,
                     user: userId,
                 });
             }

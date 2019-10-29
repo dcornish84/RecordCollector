@@ -24,7 +24,6 @@ class SearchCard extends Component {
             // comments: ""
 
         })
-        console.log("thanks Dylan", this.props)
         let userId = parseInt(sessionStorage.getItem("credentials"))
         const newRecord = {
             title: this.props.result.title,
@@ -36,12 +35,30 @@ class SearchCard extends Component {
         console.log("props", this.props.userId)
         API.saveRecord(newRecord)
             .then(() => this.props.history.push("/catalogue"))
-    }
+    };
 
     handleSaveWishlist = () => {
-        API.saveRecordWishlist(this.props.result.id)
-        this.props.history.push("/wishlist");
-    };
+        this.setState({
+            title: this.props.result.title,
+            // artist:
+            year: this.props.result.year,
+            image: this.props.result.cover_image,
+            // comments: ""
+
+        })
+        let userId = parseInt(sessionStorage.getItem("credentials"))
+        const newRecordWishlist = {
+            title: this.props.result.title,
+            year: this.props.result.year,
+            image: this.props.result.cover_image,
+            comments: this.state.comments,
+            userId: userId
+        }
+        console.log("props", this.props.userId)
+        API.saveRecordWishlist(newRecordWishlist)
+            .then(() => this.props.history.push("/wishlist"))
+    }
+        ;
 
     render() {
         return (
