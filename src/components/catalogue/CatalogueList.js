@@ -20,20 +20,6 @@ class CatalogueList extends Component {
         });
     };
 
-    // deleteRecord = id => {
-    //     API.delete("catalogue", id)
-    //         .then(() => {
-    //             API.getAll("catalogue")
-    //                 .then((catalogue) => {
-    //                     this.setState({
-    //                         catalogue: catalogue
-    //                     })
-    //                     this.getData()
-
-    //                 })
-    //         })
-    // }
-
     handleDelete = id => {
         //invoke the delete function in APIManger and re-direct to the CatalogueList.
         this.setState({ loadingStatus: true })
@@ -46,10 +32,13 @@ class CatalogueList extends Component {
 
 
     componentDidMount() {
+
         //getAll from APIManager and hang on to that data; put it in state
         let userId = parseInt(sessionStorage.getItem('credentials'));
+        console.log("CatalogueList:componentDidMount", userId)
         API.getAllCatalogue(userId)
             .then(catalogue => {
+                console.log("catalogue", catalogue)
                 this.setState({
                     catalogue: catalogue
                 })
@@ -58,6 +47,7 @@ class CatalogueList extends Component {
 
 
     render() {
+        console.log("CatalogueList:render")
         return (
             <>
                 <div>
@@ -72,6 +62,7 @@ class CatalogueList extends Component {
                                 title={record.title}
                                 image={record.image}
                                 date={record.year}
+                                notes={record.notes}
                                 handleDelete={this.handleDelete}
                                 {...this.props}
                                 className="card" />

@@ -11,7 +11,7 @@ class CatalogueDetails extends Component {
         artist: "",
         year: "",
         image: "",
-        comments: "",
+        notes: "",
         loadingStatus: true,
     }
 
@@ -47,6 +47,7 @@ class CatalogueDetails extends Component {
                                 title={this.state.release_title}
                                 date={this.state.year}
                                 id={this.state.id}
+                                notes={this.state.notes}
                                 handleDelete={this.handleDelete}
                                 getData={this.getData}
                                 {...this.props}

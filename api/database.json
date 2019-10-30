@@ -27,51 +27,49 @@
   ],
   "catalogue": [
     {
-      "title": "The Beatles - With The Beatles",
-      "year": "2017",
-      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
-      "userId": 4,
-      "id": 9,
-      "status": "true"
+      "id": 4,
+      "title": "Elvis Presley - Elvis",
+      "year": "1973",
+      "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
+      "notes": "the king",
+      "status": "true",
+      "userId": 1
     },
     {
-      "title": "Nirvana - Nevermind",
-      "year": "2015",
-      "image": "https://img.discogs.com/KXIJ0YTFJb6U-iu7aWeoZyQJ0iI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7097051-1556444180-7505.jpeg.jpg",
-      "userId": 4,
-      "id": 10,
-      "status": "false"
-    },
+      "id": 5,
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "notes": "kjlkj",
+      "status": "true",
+      "userId": 1
+    }
+  ],
+  "wishlist": [
     {
-      "title": "Lizzo - Lizzobangers",
-      "year": "2014",
-      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
-      "userId": 1,
-      "id": 13
+      "id": 1,
+      "title": "Beastie Boys - Licensed To Ill",
+      "year": "2016",
+      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "notes": "hey nick",
+      "status": "true",
+      "userId": 1
     },
     {
       "title": "Eazy-E - Eazy-Duz-It",
       "year": "1988",
       "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
-      "userId": 1,
-      "id": 14
-    },
-    {
-      "title": "Neutral Milk Hotel - In The Aeroplane Over The Sea",
-      "year": "2009",
-      "image": "https://img.discogs.com/Q73DmEAs9ko0wToM2XP_IRnnoSs=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2173833-1551244673-9745.jpeg.jpg",
       "status": "true",
       "userId": 1,
-      "id": 15
+      "id": 2
     },
     {
-      "title": "Beastie Boys - Licensed To Ill",
-      "year": "2016",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
       "status": "true",
       "userId": 1,
-      "id": 17
+      "id": 3
     }
-  ],
-  "wishlists": []
+  ]
 }

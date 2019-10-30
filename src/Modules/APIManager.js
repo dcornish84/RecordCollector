@@ -21,7 +21,7 @@ let API = {
         }).then(response => response.json());
     },
     saveRecordWishlist: recordSaveWishlist => {
-        return fetch(`${remoteURL}/wishlists`, {
+        return fetch(`${remoteURL}/wishlist`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -56,7 +56,7 @@ let API = {
 
     },
     getAllWishlist(userId) {
-        return fetch(`${remoteURL}/wishlists?userId=${userId}`).then(response =>
+        return fetch(`${remoteURL}/wishlist?userId=${userId}`).then(response =>
             response.json()
         );
 

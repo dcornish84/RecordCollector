@@ -7,8 +7,10 @@ import SearchList from './search/SearchList'
 import SearchDetail from './search/SearchDetail'
 import CatalogueDetails from './catalogue/CatalogueDetail'
 import CatalogueList from './catalogue/CatalogueList'
+import CatalogueNotes from './catalogue/CatalogueNotes'
 import WishlistDetails from './wishlist/WishlistDetail'
 import WishlistList from './wishlist/WishlistList'
+import WishlistNotes from './wishlist/WishlistNotes'
 
 
 class ApplicationViews extends Component {
@@ -44,6 +46,12 @@ class ApplicationViews extends Component {
                 }} />
                 <Route exact path="/wishlist" render={(props) => {
                     return <WishlistList userId={this.props.userId} setUser={this.props.setUser} {...props} />
+                }} />
+                <Route path="/catalogue/:catalogueId(\d+)/edit" render={(props) => {
+                    return <CatalogueNotes userId={this.props.userId} setUser={this.props.setUser} catalogueId={parseInt(props.match.params.catalogueId)} {...props} />
+                }} />
+                <Route path="/wishlist/:wishlistId(\d+)/edit" render={(props) => {
+                    return <WishlistNotes userId={this.props.userId} setUser={this.props.setUser} wishlistId={parseInt(props.match.params.wishlistId)} {...props} />
                 }} />
 
             </React.Fragment>
