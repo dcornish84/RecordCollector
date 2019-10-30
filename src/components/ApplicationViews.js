@@ -47,7 +47,7 @@ class ApplicationViews extends Component {
                     return <WishlistList userId={this.props.userId} setUser={this.props.setUser} {...props} />
                 }} />
                 <Route path="/catalogue/:catalogueId(\d+)/edit" render={(props) => {
-                    return <CatalogueNotes userId={this.props.userId} setUser={this.props.setUser} {...props} />
+                    return <CatalogueNotes userId={this.props.userId} setUser={this.props.setUser} catalogueId={parseInt(props.match.params.catalogueId)} {...props} />
                 }} />
 
             </React.Fragment>

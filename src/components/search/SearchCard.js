@@ -29,7 +29,7 @@ class SearchCard extends Component {
             year: this.props.result.year,
             image: this.props.result.cover_image,
             status: this.state.status,
-            notes: this.props.notes,
+            notes: this.state.notes,
             userId: userId
         }
         API.saveRecord(newRecord)

@@ -6,7 +6,6 @@ class CatalogueNotes extends Component {
     state = {
         userId: parseInt(sessionStorage.getItem("credentials")),
         title: "",
-        artist: "",
         year: "",
         image: "",
         notes: "",
@@ -25,36 +24,46 @@ class CatalogueNotes extends Component {
     constructNewNote = note => {
         note.preventDefault()
         this.setState({ loadingStatus: true });
+        let userId = parseInt(sessionStorage.getItem('credentials'));
         const newNote = {
-            title: this.props.title,
-            year: this.props.year,
-            image: this.props.cover_image,
+            id: this.props.match.params.catalogueId,
+            title: this.state.title,
+            year: this.state.year,
+            image: this.state.image,
+            notes: this.state.notes,
             status: this.state.status,
-            notes: this.props.notes,
-            userId: this.state.userId,
-            loadingStatus: true
+            userId: userId
         }
         API.update("catalogue", newNote)
             .then(() => this.props.history.push("/catalogue"));
+        console.log("is this working", this.props.match.params.catalogueId)
+        console.log("title", this.state.title)
     }
+
     componentDidMount() {
-        //getAll from APIManager and hang on to that data; put it in state
-        let userId = parseInt(sessionStorage.getItem('credentials'));
-        API.getAllCatalogue(userId)
+        API.get("catalogue", this.props.catalogueId)
             .then(catalogue => {
                 this.setState({
-                    catalogue: catalogue
+                    title: catalogue.title,
+                    year: catalogue.year,
+                    image: catalogue.image,
+                    notes: catalogue.notes,
+                    status: catalogue.staus,
+                    loadingStatus: false
                 })
+                console.log("title", this.props.catalogueId)
+                console.log("year", catalogue.year)
             })
     }
 
     render() {
+        console.log("this is in state", this.state.year)
 
         return (
             <>
                 <Form onSubmit={this.constructNewNote} className="noteForm">
                     <FormGroup className="noteFormGroup">
-                        <Label htmlFor="note">Notes</Label>
+                        <Label htmlFor="note"></Label>
                         <Input
                             type="text"
                             required

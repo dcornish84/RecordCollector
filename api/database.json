@@ -27,28 +27,21 @@
   ],
   "catalogue": [
     {
-      "title": "Arcade Fire - Everything Now",
-      "year": "2017",
-      "image": "https://img.discogs.com/HNNBU3f5b-c3CuYRmqvMQohuTE8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10601119-1547075203-7791.jpeg.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "title": "Lizzo - Lizzobangers",
-      "year": "2014",
-      "image": "https://img.discogs.com/dx6YfGUcArLc2N4O8RHxv56wwuY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8966735-1473285386-3686.jpeg.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 2
-    },
-    {
       "title": "Beastie Boys - Licensed To Ill",
       "year": "2016",
-      "image": "https://img.discogs.com/c1vDduO57bc1qISew5xPhlDEk9o=/fit-in/512x512/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9200786-1560590642-4495.png.jpg",
+      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
       "status": "true",
+      "notes": "",
       "userId": 1,
-      "id": 3
+      "id": 8
+    },
+    {
+      "id": 10,
+      "title": "Nirvana - Nirvana",
+      "year": "2015",
+      "image": "https://img.discogs.com/-uapQ89XnDAx5DYVWer-KlVCnGY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7445961-1572274823-6989.jpeg.jpg",
+      "notes": "this is one of the best albums of all time ",
+      "userId": 1
     }
   ],
   "wishlists": [
