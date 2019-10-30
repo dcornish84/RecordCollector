@@ -27,82 +27,28 @@
   ],
   "catalogue": [
     {
-      "title": "The Beatles - With The Beatles",
+      "title": "Arcade Fire - Everything Now",
       "year": "2017",
-      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
-      "userId": 4,
-      "id": 9,
-      "status": "true"
-    },
-    {
-      "title": "Nirvana - Nevermind",
-      "year": "2015",
-      "image": "https://img.discogs.com/KXIJ0YTFJb6U-iu7aWeoZyQJ0iI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7097051-1556444180-7505.jpeg.jpg",
-      "userId": 4,
-      "id": 10,
-      "status": "false"
+      "image": "https://img.discogs.com/HNNBU3f5b-c3CuYRmqvMQohuTE8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10601119-1547075203-7791.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 1
     },
     {
       "title": "Lizzo - Lizzobangers",
       "year": "2014",
-      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
-      "userId": 1,
-      "id": 13
-    },
-    {
-      "title": "Eazy-E - Eazy-Duz-It",
-      "year": "1988",
-      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
-      "userId": 1,
-      "id": 14
-    },
-    {
-      "title": "Neutral Milk Hotel - In The Aeroplane Over The Sea",
-      "year": "2009",
-      "image": "https://img.discogs.com/Q73DmEAs9ko0wToM2XP_IRnnoSs=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2173833-1551244673-9745.jpeg.jpg",
+      "image": "https://img.discogs.com/dx6YfGUcArLc2N4O8RHxv56wwuY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8966735-1473285386-3686.jpeg.jpg",
       "status": "true",
       "userId": 1,
-      "id": 15
+      "id": 2
     },
     {
       "title": "Beastie Boys - Licensed To Ill",
       "year": "2016",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "image": "https://img.discogs.com/c1vDduO57bc1qISew5xPhlDEk9o=/fit-in/512x512/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9200786-1560590642-4495.png.jpg",
       "status": "true",
       "userId": 1,
-      "id": 17
-    },
-    {
-      "title": "Johnny Cash - Johnny Cash At San Quentin",
-      "year": "1969",
-      "image": "https://img.discogs.com/DZdBFw6Merboa0Uw4Q1cfyq4VrE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1595647-1433829954-8033.jpeg.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 18
-    },
-    {
-      "title": "Eazy-E - Eazy-Duz-It",
-      "year": "1988",
-      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 19
-    },
-    {
-      "title": "ODB* - ODB, Don't Go Breaking My Heart",
-      "year": "2005",
-      "image": "https://img.discogs.com/ivZEtgS-hjxBFidQIsbIUMLZqmw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-872306-1226467455.jpeg.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 20
-    },
-    {
-      "title": "Queen - Queen II",
-      "year": "2008",
-      "image": "https://img.discogs.com/-Z-yAzbj-urmqSOreQIuj3VxSBU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3110951-1324246622.png.jpg",
-      "status": "true",
-      "userId": 1,
-      "id": 21
+      "id": 3
     }
   ],
   "wishlists": [

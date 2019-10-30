@@ -7,6 +7,7 @@ import SearchList from './search/SearchList'
 import SearchDetail from './search/SearchDetail'
 import CatalogueDetails from './catalogue/CatalogueDetail'
 import CatalogueList from './catalogue/CatalogueList'
+import CatalogueNotes from './catalogue/CatalogueNotes'
 import WishlistDetails from './wishlist/WishlistDetail'
 import WishlistList from './wishlist/WishlistList'
 
@@ -44,6 +45,9 @@ class ApplicationViews extends Component {
                 }} />
                 <Route exact path="/wishlist" render={(props) => {
                     return <WishlistList userId={this.props.userId} setUser={this.props.setUser} {...props} />
+                }} />
+                <Route path="/catalogue/:catalogueId(\d+)/edit" render={(props) => {
+                    return <CatalogueNotes userId={this.props.userId} setUser={this.props.setUser} {...props} />
                 }} />
 
             </React.Fragment>

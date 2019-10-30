@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../Modules/APIManager'
-import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody } from "reactstrap";
+import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText } from "reactstrap";
 
 
 class CatalogueCard extends Component {
@@ -33,7 +33,8 @@ class CatalogueCard extends Component {
                     <CardTitle> <span className="cardRecordName">{this.props.title}</span></CardTitle>
                     <CardSubtitle> {this.props.date} </CardSubtitle >
                     <CardImg src={this.props.image}></CardImg>
-                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Notes</Button>
+                    <CardText>{this.props.notes}Notes:</CardText>
+                    <Button type="button" onClick={() => { this.props.history.push(`/catalogue/${this.props.id}/edit`) }}>Update Notes</Button>
                     <Button type="button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>
                 </CardBody>
             </Card>
