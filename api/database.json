@@ -27,31 +27,49 @@
   ],
   "catalogue": [
     {
-      "title": "Beastie Boys - Licensed To Ill",
-      "year": "2016",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "id": 4,
+      "title": "Elvis Presley - Elvis",
+      "year": "1973",
+      "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
+      "notes": "the king",
       "status": "true",
-      "notes": "",
-      "userId": 1,
-      "id": 8
+      "userId": 1
     },
     {
-      "id": 10,
-      "title": "Nirvana - Nirvana",
-      "year": "2015",
-      "image": "https://img.discogs.com/-uapQ89XnDAx5DYVWer-KlVCnGY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7445961-1572274823-6989.jpeg.jpg",
-      "notes": "this is one of the best albums of all time ",
+      "id": 5,
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "notes": "kjlkj",
+      "status": "true",
       "userId": 1
     }
   ],
-  "wishlists": [
+  "wishlist": [
     {
+      "id": 1,
       "title": "Beastie Boys - Licensed To Ill",
       "year": "2016",
       "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
+      "notes": "hey nick",
+      "status": "true",
+      "userId": 1
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
       "status": "true",
       "userId": 1,
-      "id": 1
+      "id": 2
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 3
     }
   ]
 }

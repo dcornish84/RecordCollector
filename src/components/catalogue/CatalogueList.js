@@ -32,10 +32,13 @@ class CatalogueList extends Component {
 
 
     componentDidMount() {
+
         //getAll from APIManager and hang on to that data; put it in state
         let userId = parseInt(sessionStorage.getItem('credentials'));
+        console.log("CatalogueList:componentDidMount", userId)
         API.getAllCatalogue(userId)
             .then(catalogue => {
+                console.log("catalogue", catalogue)
                 this.setState({
                     catalogue: catalogue
                 })
@@ -44,6 +47,7 @@ class CatalogueList extends Component {
 
 
     render() {
+        console.log("CatalogueList:render")
         return (
             <>
                 <div>

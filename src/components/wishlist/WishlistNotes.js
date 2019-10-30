@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import API from "../../Modules/APIManager"
 
-class CatalogueNotes extends Component {
+class WishlistNotes extends Component {
     state = {
         userId: parseInt(sessionStorage.getItem("credentials")),
         title: "",
@@ -26,7 +26,7 @@ class CatalogueNotes extends Component {
         this.setState({ loadingStatus: true });
         let userId = parseInt(sessionStorage.getItem('credentials'));
         const newNote = {
-            id: this.props.match.params.catalogueId,
+            id: this.props.match.params.wishlistId,
             title: this.state.title,
             year: this.state.year,
             image: this.state.image,
@@ -34,19 +34,19 @@ class CatalogueNotes extends Component {
             status: this.state.status,
             userId: userId
         }
-        API.update("catalogue", newNote)
-            .then(() => this.props.history.push("/catalogue"));
+        API.update("wishlist", newNote)
+            .then(() => this.props.history.push("/wishlist"));
     }
 
     componentDidMount() {
-        API.get("catalogue", this.props.catalogueId)
-            .then(catalogue => {
+        API.get("wishlist", this.props.wishlistId)
+            .then(wishlist => {
                 this.setState({
-                    title: catalogue.title,
-                    year: catalogue.year,
-                    image: catalogue.image,
-                    notes: catalogue.notes,
-                    status: catalogue.status,
+                    title: wishlist.title,
+                    year: wishlist.year,
+                    image: wishlist.image,
+                    notes: wishlist.notes,
+                    status: wishlist.status,
                     loadingStatus: false
                 })
             })
@@ -79,4 +79,4 @@ class CatalogueNotes extends Component {
     }
 }
 
-export default CatalogueNotes
+export default WishlistNotes

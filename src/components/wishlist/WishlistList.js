@@ -6,15 +6,15 @@ import API from '../../Modules/APIManager';
 class WishlistList extends Component {
     //This holds the state of the Catalogue
     state = {
-        wishlists: [],
+        wishlist: [],
         loadingStatus: true,
     }
 
     getData = () => {
         let userId = parseInt(sessionStorage.getItem('credentials'));
-        API.getAllWishlist(userId).then(wishlists => {
+        API.getAllWishlist(userId).then(wishlist => {
             this.setState({
-                wishlists: wishlists
+                wishlist: wishlist
             });
         });
     };
@@ -22,7 +22,7 @@ class WishlistList extends Component {
     handleDelete = id => {
         //invoke the delete function in APIManger and re-direct to the CatalogueList.
         this.setState({ loadingStatus: true })
-        API.delete("wishlists", id)
+        API.delete("wishlist", id)
             .then(() => {
                 this.getData()
             })
@@ -34,9 +34,10 @@ class WishlistList extends Component {
         //getAll from APIManager and hang on to that data; put it in state
         let userId = parseInt(sessionStorage.getItem('credentials'));
         API.getAllWishlist(userId)
-            .then(wishlists => {
+            .then(wishlist => {
+                console.log("hello", wishlist)
                 this.setState({
-                    wishlists: wishlists
+                    wishlist: wishlist
                 })
             })
     }
@@ -47,7 +48,7 @@ class WishlistList extends Component {
             <>
 
                 <div>
-                    {this.state.wishlists.map(record => {
+                    {this.state.wishlist.map(record => {
                         return record.status === "true" ?
 
                             <WishlistCard
@@ -58,6 +59,7 @@ class WishlistList extends Component {
                                 title={record.title}
                                 image={record.image}
                                 date={record.year}
+                                notes={record.notes}
                                 handleDelete={this.handleDelete}
                                 {...this.props}
                                 className="card" />
