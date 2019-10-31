@@ -44,6 +44,17 @@ let API = {
             },
             body: JSON.stringify(newObject)
         }).then(response => response.json())
+
+    },
+
+    patch(resource, obj) {
+        return fetch(`${URL}/${resource}/${obj.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        }).then(response => response.json())
     },
     update(resource, editedObject) {
         return fetch(`${remoteURL}/${resource}/${editedObject.id}`, {

@@ -21,6 +21,10 @@ class WishlistDetails extends Component {
             .then(() => this.props.history.push("/wishlist"))
     }
 
+
+
+
+
     getData = () => {
         let userId = this.props.getUser()
         API.getAll("wishlist", sessionStorage.getItem("credentials")).then(
@@ -51,6 +55,7 @@ class WishlistDetails extends Component {
                                 date={this.state.year}
                                 id={this.state.id}
                                 notes={this.state.notes}
+                                addToCatalogue={this.addToCatalogue}
                                 handleDelete={this.handleDelete}
                                 getData={this.getData}
                                 {...this.props}
