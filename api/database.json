@@ -92,6 +92,15 @@
       "status": "true",
       "userId": 1,
       "id": 11
+    },
+    {
+      "title": "Lizzo - Lizzobangers",
+      "year": "2014",
+      "image": "https://img.discogs.com/LxgjA30H721Klq8uVyeM72nksIo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6337557-1558193716-9049.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 12
     }
   ],
   "wishlist": []
