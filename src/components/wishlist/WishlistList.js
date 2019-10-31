@@ -53,13 +53,14 @@ class WishlistList extends Component {
 
                             <WishlistCard
                                 key={record.id}
-                                id={record.id}
+                                wishlistId={record.id}
                                 getData={this.getData}
                                 artist={record.artist}
                                 title={record.title}
                                 image={record.image}
-                                date={record.year}
+                                year={record.year}
                                 notes={record.notes}
+                                status={record.status}
                                 handleDelete={this.handleDelete}
                                 {...this.props}
                                 className="card" />
