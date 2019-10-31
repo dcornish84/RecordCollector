@@ -35,7 +35,6 @@ class WishlistList extends Component {
         let userId = parseInt(sessionStorage.getItem('credentials'));
         API.getAllWishlist(userId)
             .then(wishlist => {
-                console.log("hello", wishlist)
                 this.setState({
                     wishlist: wishlist
                 })
@@ -53,6 +52,7 @@ class WishlistList extends Component {
 
                             <WishlistCard
                                 key={record.id}
+                                id={record.id}
                                 wishlistId={record.id}
                                 getData={this.getData}
                                 artist={record.artist}

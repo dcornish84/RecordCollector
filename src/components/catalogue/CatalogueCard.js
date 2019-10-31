@@ -7,7 +7,6 @@ class CatalogueCard extends Component {
     state = {
         userId: parseInt(sessionStorage.getItem("credentials")),
         title: "",
-        artist: "",
         year: "",
         image: "",
         notes: "",

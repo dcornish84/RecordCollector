@@ -8,7 +8,6 @@ class CatalogueDetails extends Component {
         catalogue: [],
         userId: "",
         title: "",
-        artist: "",
         year: "",
         image: "",
         notes: "",

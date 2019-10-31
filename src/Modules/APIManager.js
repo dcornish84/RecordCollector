@@ -77,6 +77,11 @@ let API = {
             response.json()
         );
     },
+    checkCatalogue(userId, title) {
+        return fetch(`${remoteURL}/catalogue?userId=${userId}&title=${title}`).then(response =>
+            response.json()
+        );
+    },
 
 }
 

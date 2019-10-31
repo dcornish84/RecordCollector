@@ -17,46 +17,75 @@ class SearchCard extends Component {
 
 
     handleSaveCatalogue = () => {
-        this.setState({
-            title: this.props.result.title,
-            year: this.props.result.year,
-            image: this.props.result.cover_image,
+        API.getAllCatalogue(parseInt(sessionStorage.getItem("credentials"), this.props.result.title), this.props.result.id)
+            .then((catalogue) => {
+                let match = false
+                catalogue.forEach(album => {
+                    console.log("two comparison", this.props.result.title, album.title)
+                    if (album.title === this.props.result.title) {
+                        alert("You've already added this album")
+                        match = true
+                    }
+                });
+                if (match === false) {
+                    this.setState({
+                        title: this.props.result.title,
+                        year: this.props.result.year,
+                        image: this.props.result.cover_image,
+                    })
+                    let userId = parseInt(sessionStorage.getItem("credentials"))
+                    const newRecord = {
+                        title: this.props.result.title,
+                        year: this.props.result.year,
+                        image: this.props.result.cover_image,
+                        status: this.state.status,
+                        notes: this.state.notes,
+                        userId: userId
+                    }
+                    API.saveRecord(newRecord)
+                        .then(() => this.props.history.push("/catalogue"))
+                }
 
-        })
-        let userId = parseInt(sessionStorage.getItem("credentials"))
-        const newRecord = {
-            title: this.props.result.title,
-            year: this.props.result.year,
-            image: this.props.result.cover_image,
-            status: this.state.status,
-            notes: this.state.notes,
-            userId: userId
-        }
-        API.saveRecord(newRecord)
-            .then(() => this.props.history.push("/catalogue"))
-    };
+            }
+            )
+    }
+
+
 
     handleSaveWishlist = () => {
-        this.setState({
-            title: this.props.result.title,
-            year: this.props.result.year,
-            image: this.props.result.cover_image,
+        API.getAllWishlist(parseInt(sessionStorage.getItem("credentials"), this.props.result.title), this.props.result.id)
+            .then((wishlist) => {
+                let match = false
+                wishlist.forEach(album => {
+                    console.log("two comparison", this.props.result.title, album.title)
+                    if (album.title === this.props.result.title) {
+                        alert("You've already added this album")
+                        match = true
+                    }
+                });
+                if (match === false) {
+                    this.setState({
+                        title: this.props.result.title,
+                        year: this.props.result.year,
+                        image: this.props.result.cover_image,
 
-        })
-        let userId = parseInt(sessionStorage.getItem("credentials"))
-        const newRecordWishlist = {
-            title: this.props.result.title,
-            year: this.props.result.year,
-            image: this.props.result.cover_image,
-            comments: this.state.comments,
-            status: this.state.status,
-            notes: this.props.notes,
-            userId: userId
-        }
-        API.saveRecordWishlist(newRecordWishlist)
-            .then(() => this.props.history.push("/wishlist"))
+                    })
+                    let userId = parseInt(sessionStorage.getItem("credentials"))
+                    const newRecordWishlist = {
+                        title: this.props.result.title,
+                        year: this.props.result.year,
+                        image: this.props.result.cover_image,
+                        comments: this.state.comments,
+                        status: this.state.status,
+                        notes: this.props.notes,
+                        userId: userId
+                    }
+                    API.saveRecordWishlist(newRecordWishlist)
+                        .then(() => this.props.history.push("/wishlist"))
+                };
+            })
     }
-        ;
+
 
     render() {
         return (
@@ -93,4 +122,5 @@ class SearchCard extends Component {
         );
     }
 }
+
 export default withRouter(SearchCard);

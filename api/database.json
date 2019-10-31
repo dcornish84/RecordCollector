@@ -27,55 +27,58 @@
   ],
   "catalogue": [
     {
-      "id": 4,
-      "title": "Elvis Presley - Elvis",
-      "year": "1973",
-      "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
-      "notes": "the king",
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
       "status": "true",
-      "userId": 1
-    },
-    {
-      "id": 5,
-      "title": "The Beatles - The Beatles",
-      "year": "1968",
-      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
-      "notes": "kjlkj",
-      "status": "true",
-      "userId": 1
-    },
-    {
-      "title": "Beastie Boys - Licensed To Ill",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
-      "notes": "hey nick",
+      "notes": "",
       "userId": 1,
-      "id": 6
+      "id": 2
     },
     {
-      "title": "Beastie Boys - Licensed To Ill",
-      "year": "2016",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
-      "notes": "hey nick",
-      "userId": 1,
-      "id": 7
-    },
-    {
-      "title": "Beastie Boys - Licensed To Ill",
-      "year": "2016",
-      "image": "https://img.discogs.com/aAcy-SKpdJrecORTB1iaDwXWSAE=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9173990-1476893503-6001.jpeg.jpg",
-      "notes": "hey nick",
+      "title": "The Beatles - With The Beatles",
+      "year": "2017",
+      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
       "status": "true",
       "userId": 1,
-      "id": 8
+      "id": 3
     },
     {
-      "title": "Arcade Fire - Arcade Fire",
-      "year": "2018",
-      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "title": "The Beatles - With The Beatles",
+      "year": "2017",
+      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
       "status": "true",
-      "userId": 1,
-      "id": 9
+      "notes": "",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "title": "U2 - U2.Communication",
+      "year": "2005",
+      "image": "https://img.discogs.com/DseZ_9cautGDMCBEQHUpgSY0-2Q=/fit-in/600x593/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-595713-1433429964-3084.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "title": "Bobby (Boris) Pickett And The Crypt-Kickers - Monster Mash",
+      "year": "1962",
+      "image": "https://img.discogs.com/Lo2flR3vs1IEZZK_6s5UWHtuRQI=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591620-1348253237-3589.jpeg.jpg",
+      "notes": "great jam ",
+      "status": "true",
+      "userId": 4
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 2
+    }
+  ]
 }
