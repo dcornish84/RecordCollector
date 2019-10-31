@@ -8,7 +8,6 @@ class WishlistCard extends Component {
     state = {
         userId: parseInt(sessionStorage.getItem("credentials")),
         title: "",
-        id: "",
         year: "",
         image: "",
         notes: "",
@@ -35,7 +34,6 @@ class WishlistCard extends Component {
             status: this.state.status,
             userId: userId
         }
-        console.log("hey this sucks", newCat)
         API.post("catalogue", newCat)
             .then(() => {
                 API.delete("wishlist", this.props.wishlistId)

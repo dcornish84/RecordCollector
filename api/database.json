@@ -31,7 +31,7 @@
       "title": "Elvis Presley - Elvis",
       "year": "1973",
       "image": "https://img.discogs.com/68AnCl8vghEGEq9QmoqAPWARCfI=/fit-in/409x414/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1154298-1262286582.jpeg.jpg",
-      "notes": "the king",
+      "notes": "is this working",
       "status": "true",
       "userId": 1
     },
@@ -75,6 +75,23 @@
       "status": "true",
       "userId": 1,
       "id": 9
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "status": "true",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "notes": "johnny cash rules",
+      "status": "true",
+      "userId": 1,
+      "id": 11
     }
   ],
   "wishlist": []
