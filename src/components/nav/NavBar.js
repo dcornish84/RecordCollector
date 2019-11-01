@@ -18,17 +18,14 @@ class NavBar extends Component {
                 <nav>
                     <ul className="container">
                         {(this.props.user) ?
-                            <li><Link className="nav-link" to="/register">Register</Link></li>
-                            : null}
-                        {(this.props.user) ?
                             <>
                                 <li><Link className="nav-link" to="/catalogue">Catalogue</Link></li>
                                 <li><Link className="nav-link" to="/wishlist">Wishlist</Link></li>
                                 <li><Link className="nav-link" to="/search">Search</Link></li>
-                                <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
+                                <li><Link className="nav-link" to="/" onClick={this.handleLogout}>Logout</Link></li>
                             </>
-
-                            : <li><Link className="nav-link" to="/login">Login</Link></li>
+                            : <><li><Link className="nav-link" to="/login">Login</Link></li>
+                                <li><Link className="nav-link" to="/register">Register</Link></li></>
                         }
                     </ul>
                 </nav>
