@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom"
 import './NavBar.css'
-import { Button, Navbar } from "reactstrap"
+import { Button } from "reactstrap"
 
 
 

@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div >
                 <picture>
-                    <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
+                    <img class="coverImage" src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
                 </picture>
             </div >
 

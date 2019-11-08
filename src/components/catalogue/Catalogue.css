@@ -1,0 +1,21 @@
+span.cardRecordName {
+   font-size: large;
+   font-weight: bold;
+}
+
+.cardImage {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    /* display: block; */
+    align-items: center;
+  margin-left: 0em;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cardDate {
+    font-size: medium;
+    font-weight: bold;
+}
