@@ -61,9 +61,14 @@ class Login extends Component {
                             <Input onChange={this.handleFieldChange}
                                 required="" type="password" name="password" id="password" />
                         </FormGroup>
-                        <Button onClick={this.handleLogin}>Submit</Button>
+                        <Button outline color="secondary" size="sm" onClick={this.handleLogin}>Submit</Button>
                     </Form>
                 </div>
+                <div >
+                    <picture>
+                        <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div >
             </>
         );
     }

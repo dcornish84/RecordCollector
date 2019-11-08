@@ -85,6 +85,11 @@ class Register extends Component {
                         <Button className="submit">Submit</Button>
                     </Form>
                 </div>
+                <div >
+                    <picture>
+                        <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div >
             </>
         )
     }

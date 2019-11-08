@@ -1,0 +1,31 @@
+a.catalogue {
+    color: black;
+}
+
+a.wishlist {
+    color:  black;
+}
+
+a.search {
+    color:  black;
+}
+
+a.logout {
+    color:  black;
+}
+
+a.login {
+    color:  black;
+}
+
+a.register {
+    color:  black;
+
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: baseline;
+  }

@@ -49,6 +49,11 @@ class SearchList extends Component {
                         Search
 				</Button>
                 </div>
+                {/* <div >
+                    <picture>
+                        <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div > */}
                 <>
                     {this.state.searchResults.map(result =>
                         <div key={result.id}>
@@ -59,6 +64,8 @@ class SearchList extends Component {
                                 {...this.props}
                                 newSearch={this.newSearch} />
                         </div>
+
+
 
                     )
                     }

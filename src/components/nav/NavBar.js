@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom"
 import './NavBar.css'
+import { Button, Navbar } from "reactstrap"
+
+
 
 class NavBar extends Component {
 
@@ -12,24 +15,24 @@ class NavBar extends Component {
     render() {
 
         return (
-            <header>
-                <h1 className="site-title">RecordCollector<br />
+            <footer>
+                <h1 className="site-title"><br />
                 </h1>
-                <nav>
-                    <ul className="container">
+                <nav className="navbar">
+                    <ul className="buttonContainer">
                         {(this.props.user) ?
                             <>
-                                <li><Link className="nav-link" to="/catalogue">Catalogue</Link></li>
-                                <li><Link className="nav-link" to="/wishlist">Wishlist</Link></li>
-                                <li><Link className="nav-link" to="/search">Search</Link></li>
-                                <li><Link className="nav-link" to="/" onClick={this.handleLogout}>Logout</Link></li>
+                                <Button outline color="secondary" size="sm"><Link className="catalogue" to="/catalogue">Catalogue</Link></Button>{' '}
+                                <Button outline color="secondary" size="sm"><Link className="wishlist" to="/wishlist">Wishlist</Link></Button>{' '}
+                                <Button outline color="secondary" size="sm"><Link className="search" to="/search">Search</Link></Button>{' '}
+                                <Button outline color="secondary" size="sm"><Link className="logout" to="/" onClick={this.handleLogout}>Logout</Link></Button>{' '}
                             </>
-                            : <><li><Link className="nav-link" to="/login">Login</Link></li>
-                                <li><Link className="nav-link" to="/register">Register</Link></li></>
+                            : <><Button outline color="secondary" size="sm"><Link className="login" to="/login">Login</Link></Button>{' '}
+                                <Button outline color="secondary" size="sm"><Link className="register" to="/register">Register</Link></Button>{' '}</>
                         }
                     </ul>
                 </nav>
-            </header>
+            </footer>
         )
     }
 }

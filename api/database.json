@@ -48,9 +48,44 @@
       "title": "Bobby (Boris) Pickett And The Crypt-Kickers - Monster Mash",
       "year": "1962",
       "image": "https://img.discogs.com/Lo2flR3vs1IEZZK_6s5UWHtuRQI=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591620-1348253237-3589.jpeg.jpg",
-      "notes": "great jam ",
+      "notes": "johnny cash rules",
       "status": "true",
       "userId": 4
+    },
+    {
+      "title": "Misfits - Halloween",
+      "year": "1981",
+      "image": "https://img.discogs.com/JkqE9J1iRBWJtxv0bOxpRnD3t2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-420435-1268610324.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "title": "Dead Kennedys - Halloween",
+      "year": "1982",
+      "image": "https://img.discogs.com/ohxFqBFRiKjUYpjfVAC58ApBgJE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-501323-1435864816-2460.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "title": "Various - Batman Forever (Music From The Motion Picture)",
+      "year": "1995",
+      "image": "https://img.discogs.com/lSp_eifXkVhsM4g1-vCWRsEyfSI=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-913152-1232874757.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "notes": "eazy e is awesome",
+      "status": "true",
+      "userId": 4,
+      "id": 12
     }
   ],
   "wishlist": [
