@@ -55,18 +55,18 @@ class Login extends Component {
                     </picture>
                 </div >
                 <div className="logRegForm">
-                    <Form>
+                    <Form className="loginForm">
                         <FormGroup className="loginEmail">
-                            <Label htmlFor="inputEmail" className="mr-sm-2">Email</Label>
+                            <Label htmlFor="inputEmail" className="emailLogText">Email</Label>
                             <Input onChange={this.handleFieldChange}
                                 required="" autoFocus="" type="email" name="email" id="email" />
                         </FormGroup>
                         <FormGroup className="loginPassword">
-                            <Label htmlFor="inputPassword">Password</Label>
+                            <Label htmlFor="inputPassword" className="passwordLogText">Password</Label>
                             <Input onChange={this.handleFieldChange}
                                 required="" type="password" name="password" id="password" />
                         </FormGroup>
-                        <Button outline color="secondary" size="sm" className="loginSubmit" onClick={this.handleLogin}>Submit</Button>
+                        <Button outline color="secondary" size="md" className="loginSubmit" onClick={this.handleLogin}>Submit</Button>
                     </Form>
                 </div>
 

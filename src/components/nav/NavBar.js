@@ -5,6 +5,7 @@ import { Button } from "reactstrap"
 
 
 
+
 class NavBar extends Component {
 
     handleLogout = () => {
@@ -15,22 +16,24 @@ class NavBar extends Component {
     render() {
 
         return (
+
             <footer>
                 <nav className="navbar">
                     <ul className="buttonContainer">
                         {(this.props.user) ?
                             <>
-                                <Button outline color="secondary" size="sm"><Link className="catalogue" to="/catalogue">Catalogue</Link></Button>{' '}
-                                <Button outline color="secondary" size="sm"><Link className="wishlist" to="/wishlist">Wishlist</Link></Button>{' '}
-                                <Button outline color="secondary" size="sm"><Link className="search" to="/search">Search</Link></Button>{' '}
-                                <Button outline color="secondary" size="sm"><Link className="logout" to="/" onClick={this.handleLogout}>Logout</Link></Button>{' '}
+                                <Link className="catalogueButton" to="/catalogue">Catalogue</Link>{' '}
+                                <Link className="wishlistButton" to="/wishlist">Wishlist</Link>{' '}
+                                <Link className="searchButton" to="/search">Search</Link>{' '}
+                                <Link className="logoutButton" to="/" onClick={this.handleLogout}>Logout</Link>{' '}
                             </>
-                            : <><Button outline color="secondary" size="sm"><Link className="login" to="/login">Login</Link></Button>{' '}
-                                <Button outline color="secondary" size="sm"><Link className="register" to="/register">Register</Link></Button>{' '}</>
+                            : <><Link className="loginButton" to="/login">Login</Link>{' '}
+                                <Link className="registerButton" to="/register">Register</Link>{' '}</>
                         }
                     </ul>
                 </nav>
             </footer>
+
         )
     }
 }

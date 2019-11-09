@@ -1,21 +1,28 @@
-a.catalogue {
-    color: black;
-}
-
-a.wishlist {
+.loginButton {
     color:  black;
+    position: absolute;
+      left: 90px;
+      top: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 30px;
 }
-
-a.search {
+.registerButton {
     color:  black;
-}
+    position: absolute;
+      left: 220px;
+      top: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 30px;
 
-a.logout {
-    color:  black;
-}
+      
 
+}
 a.login {
-    color:  black;
+    color: black;
 }
 
 a.register {
@@ -27,5 +34,52 @@ a.register {
     position: fixed;
     bottom: 0;
     width: 100%;
-    align-items: baseline;
+    /* align-items: baseline; */
+    background-color: powderblue;
+    padding: 0em;
+    height: 10%;
   }
+
+.catalogueButton {
+    color:  black;
+    position: absolute;
+      left: 10px;
+      top: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 22px;
+}
+
+.wishlistButton {
+    color:  black;
+    position: absolute;
+      left: 130px;
+      top: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 22px;
+}
+
+.searchButton {
+    color:  black;
+    position: absolute;
+      left: 230px;
+      top: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 22px;
+}
+
+.logoutButton {
+    color:  black;
+    position: absolute;
+      left: 320px;
+      top: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-shadow: 3px 2px whitesmoke;
+      font-size: 22px;
+}

@@ -65,28 +65,28 @@ class Register extends Component {
                 </div >
                 <div className="logRegForm">
                     <Form onSubmit={this.handleRegister} inline>
-                        <FormGroup className="loginEmail">
-                            <Label htmlFor="name" className="mr-sm-2">Name</Label>
+                        <FormGroup className="registerName">
+                            <Label htmlFor="name" className="nameLogText">Name</Label>
                             <Input onChange={this.handleFieldChange} type="name"
                                 id="name"
                                 placeholder="Name"
                                 required="" autoFocus="" />
                         </FormGroup>
-                        <FormGroup className="loginEmail">
-                            <Label htmlFor="inputEmail" className="mr-sm-2">Email</Label>
+                        <FormGroup className="registerEmail">
+                            <Label htmlFor="inputEmail" className="emailLogText">Email</Label>
                             <Input onChange={this.handleFieldChange} type="email"
                                 id="rEmail"
                                 placeholder="Email address"
                                 required="" autoFocus="" />
                         </FormGroup>
-                        <FormGroup className="loginPassword">
-                            <Label htmlFor="inputPassword" className="mr-sm-2">Password</Label>
+                        <FormGroup className="registerPassword">
+                            <Label htmlFor="inputPassword" className="passwordLogText">Password</Label>
                             <Input onChange={this.handleFieldChange} type="password"
                                 id="rPassword"
                                 placeholder="Password"
                                 required="" />
                         </FormGroup>
-                        <Button outline color="secondary" size="sm" className="submit">Submit</Button>
+                        <Button outline color="secondary" size="md" className="registerSubmit">Submit</Button>
                     </Form>
                 </div>
             </>

@@ -1,13 +1,13 @@
 .loginImage {
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     /* display: block; */
     align-items: center;
-  margin-left: 6em;
+  margin-left: 65px;
   margin-right: 5em;
-  margin-top: 4em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   }
 
   /* .logRegForm {
@@ -24,20 +24,61 @@
 
   .loginEmail {
       padding-right: 5em;
-      padding-left: 5em;
+      padding-left: 3em;
   }
 
   .loginPassword {
     padding-right: 5em;
-      padding-left: 5em;
+      padding-left: 3em;
   }
 
  .loginSubmit {
       color: black;
-      align-items: center;
+      position: absolute;
+      left: 50px;
   }
 
 .submit {
     color: black;
       align-items: center;
+}
+
+.registerName {
+    padding-right: 5em;
+    padding-left: 6em;
+}
+
+.registerEmail {
+    padding-right: 5em;
+    padding-left: 6em;
+}
+
+.registerPassword {
+  padding-right: 2em;
+    padding-left: 6em;
+}
+
+.registerSubmit {
+    color: black;
+    position: absolute;
+    left: 95px;
+    bottom: 160px;
+}
+
+.passwordLogText {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+}
+
+.emailLogText {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+}
+
+.nameLogText {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
 }
