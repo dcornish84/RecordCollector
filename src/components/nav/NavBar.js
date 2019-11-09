@@ -16,8 +16,6 @@ class NavBar extends Component {
 
         return (
             <footer>
-                <h1 className="site-title"><br />
-                </h1>
                 <nav className="navbar">
                     <ul className="buttonContainer">
                         {(this.props.user) ?

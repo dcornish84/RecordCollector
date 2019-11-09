@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import AuthManager from "../../Modules/AuthManager"
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { withRouter } from "react-router-dom";
+import "./Auth.css";
 
 
 class Login extends Component {
@@ -48,27 +49,27 @@ class Login extends Component {
     render() {
         return (
             <>
+                <div >
+                    <picture>
+                        <img className="loginImage" src={require('../../images/LoginButton.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div >
                 <div className="logRegForm">
-                    <h3 className="logRegTitle">Login</h3>
-                    <Form inline>
-                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label htmlFor="inputEmail" className="mr-sm-2">Email:</Label>
+                    <Form>
+                        <FormGroup className="loginEmail">
+                            <Label htmlFor="inputEmail" className="mr-sm-2">Email</Label>
                             <Input onChange={this.handleFieldChange}
                                 required="" autoFocus="" type="email" name="email" id="email" />
                         </FormGroup>
-                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label htmlFor="inputPassword" className="mr-sm-2">Password:</Label>
+                        <FormGroup className="loginPassword">
+                            <Label htmlFor="inputPassword">Password</Label>
                             <Input onChange={this.handleFieldChange}
                                 required="" type="password" name="password" id="password" />
                         </FormGroup>
-                        <Button outline color="secondary" size="sm" onClick={this.handleLogin}>Submit</Button>
+                        <Button outline color="secondary" size="sm" className="loginSubmit" onClick={this.handleLogin}>Submit</Button>
                     </Form>
                 </div>
-                <div >
-                    <picture>
-                        <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
-                    </picture>
-                </div >
+
             </>
         );
     }

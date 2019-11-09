@@ -19,3 +19,7 @@ span.cardRecordName {
     font-size: medium;
     font-weight: bold;
 }
+
+.card {
+    background-color: rgb(232, 242, 247);
+}
