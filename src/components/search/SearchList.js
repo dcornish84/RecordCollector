@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Button, Input } from "reactstrap";
+import { Button, Input, Form, FormGroup, Label } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import API from "../../Modules/APIManager"
 import SearchCard from "./SearchCard"
+import "./Search.css"
 
 
 class SearchList extends Component {
@@ -31,29 +32,28 @@ class SearchList extends Component {
     render() {
         return (
             <>
-                <div className="searchBtnDiv">
-                    <Input
-                        className="form-control mr-sm-2"
-                        type="search"
-                        id="search"
-                        placeholder="Search for artist or release"
-                        aria-label="Search"
-                        onChange={this.handleFieldChange}
-                    ></Input>
-                    <Button
-                        className="btn btn-outline-success my-2 my-sm-0"
-                        type="button"
-                        required
-                        onClick={this.newSearch}
-                    >
-                        Search
-				</Button>
-                </div>
-                {/* <div >
-                    <picture>
-                        <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
-                    </picture>
-                </div > */}
+                <Form className="searchFarm">
+                    <FormGroup className="searchFarm">
+                        <div className="searchBtnDiv">
+                            <Input
+                                className="searchForm"
+                                type="search"
+                                id="search"
+                                placeholder="Search for artist or release"
+                                aria-label="Search"
+                                onChange={this.handleFieldChange}
+                            ></Input>
+                            <Button outline color="secondary" size="md"
+                                className="searchFormButt"
+                                type="button"
+                                required
+                                onClick={this.newSearch}
+                            >
+                                Search
+				</Button>{' '}
+                        </div>
+                    </FormGroup>
+                </Form>
                 <>
                     {this.state.searchResults.map(result =>
                         <div key={result.id}>

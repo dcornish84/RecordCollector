@@ -1,0 +1,49 @@
+.searchFormButt {
+    color: black;
+      position: absolute;
+      left: 2px;
+}
+
+
+.form-control {
+    left: 150px;
+}
+
+.searchBtnDiv {
+    left: 150px;
+}
+
+.searchFarm {
+    left: 150px;
+    width: 75%;
+    top: 150px;
+}
+
+.searchCardImage {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    /* display: block; */
+    align-items: center;
+  /* margin-left: ; */
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+
+.searchDate {
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 47px;
+}
+
+.searchTitle {
+    font-size: large;
+   font-weight: bold;
+   margin-left: 45px;
+}
+
+.addToCatalogueButt {
+    margin-left: 43px;
+
+}

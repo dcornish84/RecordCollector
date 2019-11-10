@@ -5,6 +5,7 @@ import {
     CardTitle, CardSubtitle
 } from "reactstrap";
 import API from "../../Modules/APIManager";
+import "./Search.css"
 
 class SearchCard extends Component {
 
@@ -100,10 +101,10 @@ class SearchCard extends Component {
                                 {" "}
                                 <span className="card-searchResults">
 
-                                    <CardTitle>{this.props.result.title}</CardTitle>
-                                    <CardSubtitle>{this.props.result.release_title}</CardSubtitle>
-                                    <CardSubtitle>{this.props.result.year}</CardSubtitle>
-                                    <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} alt="" /></a></ul>
+                                    <CardTitle className="searchTitle">{this.props.result.title}</CardTitle>
+                                    <CardSubtitle className="searchTitle">{this.props.result.release_title}</CardSubtitle>
+                                    <CardSubtitle className="searchDate">{this.props.result.year}</CardSubtitle>
+                                    <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} className="searchCardImage" alt="" /></a></ul>
                                     {/* what will appear on search card */}
                                 </span>
 
@@ -113,6 +114,7 @@ class SearchCard extends Component {
                             </div>
                             <Button
                                 type="button"
+                                className="addToCatalogueButt"
                                 onClick={() => this.handleSaveCatalogue()}>
                                 Add to Catalogue
 				</Button>

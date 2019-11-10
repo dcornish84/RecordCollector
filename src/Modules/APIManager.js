@@ -9,7 +9,7 @@ let API = {
         return fetch(`${remoteURL}/${resource}?userId=${userId}`).then(response => response.json())
     },
     artistSearch(record) {
-        return fetch(`https://api.discogs.com//database/search?q=${record}&type=release&release_title&year&per_page=100&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
+        return fetch(`https://api.discogs.com//database/search?q=${record}&type=release&release_title&year&per_page=15&key=XpZKbUzVMscaspKViTxy&secret=PgEALtXymYNUFVbCRWYnoEMunqZMMCTC`).then(response => response.json())
     },
     saveRecord: recordSave => {
         return fetch(`${remoteURL}/catalogue`, {

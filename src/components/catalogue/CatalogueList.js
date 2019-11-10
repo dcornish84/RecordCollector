@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CatalogueCard from "./CatalogueCard";
 import API from '../../Modules/APIManager';
-// import WishlistCard from '../wishlist/WishlistCard';
+import "./Catalogue.css"
 
 
 class CatalogueList extends Component {
@@ -47,7 +47,7 @@ class CatalogueList extends Component {
     render() {
         return (
             <>
-                <div>
+                <div className="gridContainer">
                     {this.state.catalogue.map(record => {
                         return record.status === "true" ?
 

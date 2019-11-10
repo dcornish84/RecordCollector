@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../Modules/APIManager'
-import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText } from "reactstrap";
+import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText, CardColumns } from "reactstrap";
 import "./Catalogue.css"
 
 
@@ -26,7 +26,6 @@ class CatalogueCard extends Component {
     render() {
 
         return (
-
             <div><Card className="card">
 
                 <CardBody className="catalogueCard">
@@ -39,6 +38,7 @@ class CatalogueCard extends Component {
                 </CardBody>
             </Card>
             </div >
+
         );
     }
 }

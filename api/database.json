@@ -86,6 +86,24 @@
       "status": "true",
       "userId": 4,
       "id": 12
+    },
+    {
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 13
+    },
+    {
+      "title": "The Beatles - With The Beatles",
+      "year": "2017",
+      "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 14
     }
   ],
   "wishlist": [
