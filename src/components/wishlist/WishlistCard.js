@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import API from '../../Modules/APIManager'
 import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText } from "reactstrap";
+import "./Wishlist.css"
 
 
 
@@ -60,12 +61,12 @@ class WishlistCard extends Component {
 
                 <CardBody className="wishlistCard">
                     <CardTitle> <span className="cardRecordName">{this.props.title}</span></CardTitle>
-                    <CardSubtitle> {this.props.date} </CardSubtitle >
-                    <CardImg src={this.props.image}></CardImg>
-                    <CardText> {this.props.notes}</CardText>
-                    <Button type="button" onClick={() => { this.props.history.push(`/wishlist/${this.props.id}/edit`) }}>Update Notes</Button>
-                    <Button type="button" onClick={this.addToCatalogue}>Got It!</Button>
-                    <Button type="button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>
+                    <CardSubtitle className="wishlistYear"> {this.props.year} </CardSubtitle >
+                    <CardImg className="wishlistCardImage" src={this.props.image}></CardImg>
+                    <CardText className="wishlistNotes">My Notes: {''} {this.props.notes}</CardText>
+                    <Button type="button" outline color="secondary" size="md" className="updateWishNotesButt" onClick={() => { this.props.history.push(`/wishlist/${this.props.id}/edit`) }}>Update Notes</Button>
+                    <Button type="button" outline color="secondary" size="md" className="gotItButt" onClick={this.addToCatalogue}>Got It!</Button>
+                    <Button type="button" outline color="secondary" size="md" className="deleteWishButt" onClick={() => this.props.handleDelete(this.props.id)}>Delete</Button>
                 </CardBody>
             </Card>
             </div >

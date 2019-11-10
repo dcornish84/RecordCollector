@@ -131,6 +131,14 @@
       "notes": "",
       "userId": 4,
       "id": 17
+    },
+    {
+      "title": "Danger Mouse - Danger Mouse Remix EP - Yellow",
+      "year": "2003",
+      "image": "https://img.discogs.com/PnidqtdQAife04AAFRtsDe04UP4=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1105060-1290969114.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 18
     }
   ],
   "wishlist": [
@@ -141,6 +149,39 @@
       "status": "true",
       "userId": 1,
       "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Lady Gaga - Joanne",
+      "year": "2016",
+      "image": "https://img.discogs.com/6vGtRQBpGYVscbTurxoWgddtuWw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9506110-1483134264-3204.jpeg.jpg",
+      "notes": "the queen",
+      "status": "true",
+      "userId": 4
+    },
+    {
+      "title": "CeeLo* - CeeLo's Magic Moment",
+      "year": "2012",
+      "image": "https://img.discogs.com/73xopuYJl1mK-53t_UCSETi2QlM=/fit-in/249x250/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4050214-1353793780-5777.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "title": "Sam Cooke - This Is Sam Cooke",
+      "year": "1971",
+      "image": "https://img.discogs.com/u6GsnzRIFhdOkI99OE0D60rQKP8=/fit-in/500x497/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3023039-1333214351.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "title": "Phil Spector - A Christmas Gift For You From Phil Spector",
+      "year": "2002",
+      "image": "https://img.discogs.com/2EjMDFxdcYgYByMWOk7KYQyWjIM=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1162509-1514012854-1679.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 6
     }
   ]
 }
