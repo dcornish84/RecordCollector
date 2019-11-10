@@ -112,7 +112,7 @@ class SearchCard extends Component {
                             <div className="populateSearch">
 
                             </div>
-                            <Button
+                            <Button outline color="secondary" size="md"
                                 type="button"
                                 className="addToCatalogueButt"
                                 onClick={() => this.handleSaveCatalogue()}>
@@ -120,8 +120,9 @@ class SearchCard extends Component {
 				</Button>
                         </div>
                         <div>
-                            <Button
+                            <Button outline color="secondary" size="md"
                                 type="button"
+                                className="addToWishlistButt"
                                 onClick={() => this.handleSaveWishlist()}>
                                 Add to Wishlist
 				</Button>

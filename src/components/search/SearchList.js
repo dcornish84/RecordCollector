@@ -33,7 +33,7 @@ class SearchList extends Component {
         return (
             <>
                 <Form className="searchFarm">
-                    <FormGroup className="searchFarm">
+                    <FormGroup>
                         <div className="searchBtnDiv">
                             <Input
                                 className="searchForm"
