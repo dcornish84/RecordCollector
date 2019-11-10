@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../Modules/APIManager';
+import "./Search.css"
 
 class SearchForm extends Component {
     state = {
@@ -46,7 +47,7 @@ class SearchForm extends Component {
                             />
                             <label htmlFor="searchResult">Search</label>
                         </div>
-                        <div className="alignRight">
+                        <div className="searchFormButton">
                             <button
                                 type="button"
                                 disabled={this.state.loadingStatus}

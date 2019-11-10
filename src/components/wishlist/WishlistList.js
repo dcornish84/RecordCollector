@@ -46,7 +46,7 @@ class WishlistList extends Component {
         return (
             <>
 
-                <div>
+                <div className="wishlistContainer">
                     {this.state.wishlist.map(record => {
                         return record.status === "true" ?
 

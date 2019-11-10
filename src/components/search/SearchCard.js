@@ -1,7 +1,11 @@
 import { withRouter } from "react-router-dom";
 import React, { Component } from "react";
-import { Button } from "reactstrap";
+import {
+    Button, Card, CardBody,
+    CardTitle, CardSubtitle
+} from "reactstrap";
 import API from "../../Modules/APIManager";
+import "./Search.css"
 
 class SearchCard extends Component {
 
@@ -21,7 +25,6 @@ class SearchCard extends Component {
             .then((catalogue) => {
                 let match = false
                 catalogue.forEach(album => {
-                    console.log("two comparison", this.props.result.title, album.title)
                     if (album.title === this.props.result.title) {
                         alert("You've already added this album")
                         match = true
@@ -57,7 +60,6 @@ class SearchCard extends Component {
             .then((wishlist) => {
                 let match = false
                 wishlist.forEach(album => {
-                    console.log("two comparison", this.props.result.title, album.title)
                     if (album.title === this.props.result.title) {
                         alert("You've already added this album")
                         match = true
@@ -91,34 +93,44 @@ class SearchCard extends Component {
         return (
 
             <div className="card">
-                <div className="card-content">
-                    <h3>
-                        {" "}
-                        <span className="card-searchResults">
-                            <ul>{this.props.result.title}</ul>
-                            <ul>{this.props.result.release_title}</ul>
-                            <ul>{this.props.result.year}</ul>
-                            <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} alt="" /></a></ul>
-                            {/* what will appear on search card */}
-                        </span>
-                    </h3>
-                    <div className="populateSearch">
+                <Card>
+                    <CardBody>
+                        <div className="card-content">
+                            <h3>
 
-                    </div>
-                    <Button
-                        type="button"
-                        onClick={() => this.handleSaveCatalogue()}>
-                        Add to Catalogue
+                                {" "}
+                                <span className="card-searchResults">
+
+                                    <CardTitle className="searchTitle">{this.props.result.title}</CardTitle>
+                                    <CardSubtitle className="searchTitle">{this.props.result.release_title}</CardSubtitle>
+                                    <CardSubtitle className="searchDate">{this.props.result.year}</CardSubtitle>
+                                    <ul><a href={this.props.result.resource_url}><img src={this.props.result.cover_image} className="searchCardImage" alt="" /></a></ul>
+                                    {/* what will appear on search card */}
+                                </span>
+
+                            </h3>
+                            <div className="populateSearch">
+
+                            </div>
+                            <Button outline color="secondary" size="md"
+                                type="button"
+                                className="addToCatalogueButt"
+                                onClick={() => this.handleSaveCatalogue()}>
+                                Add to Catalogue
 				</Button>
-                </div>
-                <div>
-                    <Button
-                        type="button"
-                        onClick={() => this.handleSaveWishlist()}>
-                        Add to Wishlist
+                        </div>
+                        <div>
+                            <Button outline color="secondary" size="md"
+                                type="button"
+                                className="addToWishlistButt"
+                                onClick={() => this.handleSaveWishlist()}>
+                                Add to Wishlist
 				</Button>
-                </div>
+                        </div>
+                    </CardBody>
+                </Card>
             </div>
+
         );
     }
 }

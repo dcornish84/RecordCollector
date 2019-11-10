@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Home.css"
 
 class Home extends Component {
 
@@ -6,7 +7,7 @@ class Home extends Component {
         return (
             <div >
                 <picture>
-                    <img src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
+                    <img className="coverImage" src={require('../../images/Logo.png')} alt="RecordCollector Logo" />
                 </picture>
             </div >
 

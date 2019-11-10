@@ -44,31 +44,102 @@
       "id": 3
     },
     {
+      "id": 6,
+      "title": "Bobby (Boris) Pickett And The Crypt-Kickers - Monster Mash",
+      "year": "1962",
+      "image": "https://img.discogs.com/Lo2flR3vs1IEZZK_6s5UWHtuRQI=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591620-1348253237-3589.jpeg.jpg",
+      "notes": "super scary",
+      "status": "true",
+      "userId": 4
+    },
+    {
+      "title": "Misfits - Halloween",
+      "year": "1981",
+      "image": "https://img.discogs.com/JkqE9J1iRBWJtxv0bOxpRnD3t2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-420435-1268610324.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "title": "Dead Kennedys - Halloween",
+      "year": "1982",
+      "image": "https://img.discogs.com/ohxFqBFRiKjUYpjfVAC58ApBgJE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-501323-1435864816-2460.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "title": "Various - Batman Forever (Music From The Motion Picture)",
+      "year": "1995",
+      "image": "https://img.discogs.com/lSp_eifXkVhsM4g1-vCWRsEyfSI=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-913152-1232874757.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "title": "Eazy-E - Eazy-Duz-It",
+      "year": "1988",
+      "image": "https://img.discogs.com/oxkOef4dimJWUxWtatJElLDPwXk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-148960-1397444048-9757.jpeg.jpg",
+      "notes": "eazy e is awesome",
+      "status": "true",
+      "userId": 4,
+      "id": 12
+    },
+    {
+      "title": "The Beatles - The Beatles",
+      "year": "1968",
+      "image": "https://img.discogs.com/1FJJNUI5oLEIZxHfxi0ZAwwfFDU=/fit-in/465x464/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1436445-1233697817.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 13
+    },
+    {
       "title": "The Beatles - With The Beatles",
       "year": "2017",
       "image": "https://img.discogs.com/YcAMiEb8cqn-2vmXz7alogVyuuw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10488214-1498479045-3011.jpeg.jpg",
       "status": "true",
       "notes": "",
       "userId": 4,
-      "id": 4
+      "id": 14
     },
     {
-      "title": "U2 - U2.Communication",
-      "year": "2005",
-      "image": "https://img.discogs.com/DseZ_9cautGDMCBEQHUpgSY0-2Q=/fit-in/600x593/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-595713-1433429964-3084.jpeg.jpg",
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
       "status": "true",
       "notes": "",
       "userId": 4,
-      "id": 5
+      "id": 15
     },
     {
-      "id": 6,
-      "title": "Bobby (Boris) Pickett And The Crypt-Kickers - Monster Mash",
-      "year": "1962",
-      "image": "https://img.discogs.com/Lo2flR3vs1IEZZK_6s5UWHtuRQI=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591620-1348253237-3589.jpeg.jpg",
-      "notes": "great jam ",
+      "title": "Beyoncé - Beyoncé",
+      "year": "2014",
+      "image": "https://img.discogs.com/Jx2O2sqmNqJw773XBf7SA0K_wQQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5890382-1405524027-2054.jpeg.jpg",
       "status": "true",
-      "userId": 4
+      "notes": "",
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "title": "Lady Gaga - The Fame",
+      "year": "2008",
+      "image": "https://img.discogs.com/C8NE-g37QmgcClR05-uoJln_yW0=/fit-in/600x604/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1691381-1411417445-5623.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 17
+    },
+    {
+      "title": "The Magnetic Fields - 69 Love Songs",
+      "year": "2010",
+      "image": "https://img.discogs.com/JDyYAPuO_iPMZjDdhknmzY9kWG0=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2193244-1271525482.jpeg.jpg",
+      "notes": "desi wants this for christmas",
+      "status": "true",
+      "userId": 4,
+      "id": 19
     }
   ],
   "wishlist": [
@@ -79,6 +150,39 @@
       "status": "true",
       "userId": 1,
       "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Lady Gaga - Joanne",
+      "year": "2016",
+      "image": "https://img.discogs.com/6vGtRQBpGYVscbTurxoWgddtuWw=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9506110-1483134264-3204.jpeg.jpg",
+      "notes": "the queen",
+      "status": "true",
+      "userId": 4
+    },
+    {
+      "title": "CeeLo* - CeeLo's Magic Moment",
+      "year": "2012",
+      "image": "https://img.discogs.com/73xopuYJl1mK-53t_UCSETi2QlM=/fit-in/249x250/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4050214-1353793780-5777.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "title": "Sam Cooke - This Is Sam Cooke",
+      "year": "1971",
+      "image": "https://img.discogs.com/u6GsnzRIFhdOkI99OE0D60rQKP8=/fit-in/500x497/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3023039-1333214351.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "title": "Phil Spector - A Christmas Gift For You From Phil Spector",
+      "year": "2002",
+      "image": "https://img.discogs.com/2EjMDFxdcYgYByMWOk7KYQyWjIM=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1162509-1514012854-1679.jpeg.jpg",
+      "status": "true",
+      "userId": 4,
+      "id": 6
     }
   ]
 }

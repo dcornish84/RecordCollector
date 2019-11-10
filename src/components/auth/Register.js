@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import AuthManager from "../../Modules/AuthManager";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
-
+import "./Auth.css";
 
 class Register extends Component {
 
@@ -58,31 +58,35 @@ class Register extends Component {
     render() {
         return (
             <>
+                <div >
+                    <picture>
+                        <img className="registerImage" src={require('../../images/Register.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div >
                 <div className="logRegForm">
-                    <h3 className="logRegTitle">Register</h3>
                     <Form onSubmit={this.handleRegister} inline>
-                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label htmlFor="name" className="mr-sm-2">Name:</Label>
+                        <FormGroup className="registerName">
+                            <Label htmlFor="name" className="nameLogText">Name</Label>
                             <Input onChange={this.handleFieldChange} type="name"
                                 id="name"
                                 placeholder="Name"
                                 required="" autoFocus="" />
                         </FormGroup>
-                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label htmlFor="inputEmail" className="mr-sm-2">Email:</Label>
+                        <FormGroup className="registerEmail">
+                            <Label htmlFor="inputEmail" className="emailLogText">Email</Label>
                             <Input onChange={this.handleFieldChange} type="email"
                                 id="rEmail"
                                 placeholder="Email address"
                                 required="" autoFocus="" />
                         </FormGroup>
-                        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label htmlFor="inputPassword" className="mr-sm-2">Password:</Label>
+                        <FormGroup className="registerPassword">
+                            <Label htmlFor="inputPassword" className="passwordLogText">Password</Label>
                             <Input onChange={this.handleFieldChange} type="password"
                                 id="rPassword"
                                 placeholder="Password"
                                 required="" />
                         </FormGroup>
-                        <Button className="submit">Submit</Button>
+                        <Button outline color="secondary" size="md" className="registerSubmit">Submit</Button>
                     </Form>
                 </div>
             </>

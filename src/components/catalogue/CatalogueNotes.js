@@ -68,9 +68,10 @@ class CatalogueNotes extends Component {
                             placeholder=""></Input>
                     </FormGroup>
                     <Button
+                        outline color="secondary" size="md"
                         type="submit"
                         onClick={this.constructNewNote}
-                        className="btn btn-primary">
+                        className="noteSubmitButt">
                         Submit
                 </Button>
                 </Form>

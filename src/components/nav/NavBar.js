@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom"
 import './NavBar.css'
 
+
+
+
 class NavBar extends Component {
 
     handleLogout = () => {
@@ -12,27 +15,24 @@ class NavBar extends Component {
     render() {
 
         return (
-            <header>
-                <h1 className="site-title">RecordCollector<br />
-                </h1>
-                <nav>
-                    <ul className="container">
-                        {(this.props.user) ?
-                            <li><Link className="nav-link" to="/register">Register</Link></li>
-                            : null}
+
+            <footer>
+                <nav className="navbar">
+                    <ul className="buttonContainer">
                         {(this.props.user) ?
                             <>
-                                <li><Link className="nav-link" to="/catalogue">Catalogue</Link></li>
-                                <li><Link className="nav-link" to="/wishlist">Wishlist</Link></li>
-                                <li><Link className="nav-link" to="/search">Search</Link></li>
-                                <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
+                                <Link className="catalogueButton" to="/catalogue">Catalogue</Link>{' '}
+                                <Link className="wishlistButton" to="/wishlist">Wishlist</Link>{' '}
+                                <Link className="searchButton" to="/search">Search</Link>{' '}
+                                <Link className="logoutButton" to="/" onClick={this.handleLogout}>Logout</Link>{' '}
                             </>
-
-                            : <li><Link className="nav-link" to="/login">Login</Link></li>
+                            : <><Link className="loginButton" to="/login">Login</Link>{' '}
+                                <Link className="registerButton" to="/register">Register</Link>{' '}</>
                         }
                     </ul>
                 </nav>
-            </header>
+            </footer>
+
         )
     }
 }
