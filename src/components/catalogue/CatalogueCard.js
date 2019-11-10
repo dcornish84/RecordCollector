@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../Modules/APIManager'
-import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText, CardColumns } from "reactstrap";
+import { Card, CardTitle, CardSubtitle, Button, CardImg, CardBody, CardText, } from "reactstrap";
 import "./Catalogue.css"
 
 

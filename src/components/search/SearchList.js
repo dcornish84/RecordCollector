@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Input, Form, FormGroup, Label } from "reactstrap";
+import { Button, Input, Form, FormGroup, } from "reactstrap";
 import { withRouter } from "react-router-dom";
 import API from "../../Modules/APIManager"
 import SearchCard from "./SearchCard"
