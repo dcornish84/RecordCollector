@@ -54,6 +54,11 @@ class SearchList extends Component {
                         </div>
                     </FormGroup>
                 </Form>
+                {/* <div >
+                    <picture>
+                        <img className="coverCrate" src={require('../../images/recordCrate.png')} alt="RecordCollector Logo" />
+                    </picture>
+                </div > */}
                 <>
                     {this.state.searchResults.map(result =>
                         <div key={result.id}>

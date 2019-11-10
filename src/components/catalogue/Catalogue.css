@@ -1,6 +1,7 @@
 span.cardRecordName {
    font-size: large;
    font-weight: bold;
+   margin-left: 20px;
 }
 
 .cardImage {
@@ -9,7 +10,7 @@ span.cardRecordName {
     height: 90%;
     /* display: block; */
     align-items: center;
-  margin-left: 0em;
+  margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
@@ -18,9 +19,37 @@ span.cardRecordName {
 .cardDate {
     font-size: medium;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 .card {
     bottom: 75px;
     /* top: 25px */
+}
+
+.gridContainer{
+    margin-top: 4em;
+}
+
+.updateNotesButt {
+    color: black;
+    margin-left: 20px;
+}
+
+.deleteButt {
+    color: black;
+    margin-left: 134px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.recordNotes {
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.noteSubmitButt {
+    color: black;
 }

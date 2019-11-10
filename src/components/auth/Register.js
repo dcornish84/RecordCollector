@@ -60,7 +60,7 @@ class Register extends Component {
             <>
                 <div >
                     <picture>
-                        <img className="loginImage" src={require('../../images/RegisterButton.png')} alt="RecordCollector Logo" />
+                        <img className="registerImage" src={require('../../images/Register.png')} alt="RecordCollector Logo" />
                     </picture>
                 </div >
                 <div className="logRegForm">

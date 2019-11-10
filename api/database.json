@@ -48,7 +48,7 @@
       "title": "Bobby (Boris) Pickett And The Crypt-Kickers - Monster Mash",
       "year": "1962",
       "image": "https://img.discogs.com/Lo2flR3vs1IEZZK_6s5UWHtuRQI=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-591620-1348253237-3589.jpeg.jpg",
-      "notes": "groovy",
+      "notes": "super scary",
       "status": "true",
       "userId": 4
     },
@@ -104,6 +104,33 @@
       "notes": "",
       "userId": 4,
       "id": 14
+    },
+    {
+      "title": "Arcade Fire - Arcade Fire",
+      "year": "2018",
+      "image": "https://img.discogs.com/oiVZnwjfepvWhnG0klwjh_cwj5U=/fit-in/500x498/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11861650-1524348231-1153.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 15
+    },
+    {
+      "title": "Beyoncé - Beyoncé",
+      "year": "2014",
+      "image": "https://img.discogs.com/Jx2O2sqmNqJw773XBf7SA0K_wQQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5890382-1405524027-2054.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "title": "Lady Gaga - The Fame",
+      "year": "2008",
+      "image": "https://img.discogs.com/C8NE-g37QmgcClR05-uoJln_yW0=/fit-in/600x604/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1691381-1411417445-5623.jpeg.jpg",
+      "status": "true",
+      "notes": "",
+      "userId": 4,
+      "id": 17
     }
   ],
   "wishlist": [

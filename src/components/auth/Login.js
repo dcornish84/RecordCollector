@@ -51,7 +51,7 @@ class Login extends Component {
             <>
                 <div >
                     <picture>
-                        <img className="loginImage" src={require('../../images/LoginButton.png')} alt="RecordCollector Logo" />
+                        <img className="loginImage" src={require('../../images/Login.png')} alt="RecordCollector Logo" />
                     </picture>
                 </div >
                 <div className="logRegForm">
