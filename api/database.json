@@ -177,12 +177,13 @@
       "id": 5
     },
     {
-      "title": "Phil Spector - A Christmas Gift For You From Phil Spector",
-      "year": "2002",
-      "image": "https://img.discogs.com/2EjMDFxdcYgYByMWOk7KYQyWjIM=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1162509-1514012854-1679.jpeg.jpg",
+      "id": 6,
+      "title": "Elisabetta Viviani - Heidi",
+      "year": "1978",
+      "image": "https://img.discogs.com/28ED0OuohUAeqEurGjHGSISzNw0=/fit-in/588x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1712415-1362431277-3817.jpeg.jpg",
+      "notes": "heidi is cool",
       "status": "true",
-      "userId": 4,
-      "id": 6
+      "userId": 4
     }
   ]
 }
